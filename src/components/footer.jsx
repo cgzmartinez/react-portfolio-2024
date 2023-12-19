@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="float-right pl-20 pt-10 ml-20">
           <h1 className="font-serif font-bold text-2xl">Find me here</h1>
           <ul className="font-serif font-medium text-2xl pt-10">
-            <li>GitHub</li>
-            <li>Linkedin</li>
-            <li>Medium</li>
-            <li>Upwork</li>
+            <li><a href="https://github.com/cgzmartinez" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noreferrer">Linkedin</a></li>
+            <li><a href="https://medium.com/@cgzmarti" target="_blank" rel="noreferrer">Medium</a></li>
+            <li><a href="https://www.upwork.com/freelancers/~0181d2b492c6b37a9e" target="_blank" rel="noreferrer">Upwork</a></li>
           </ul>
         </div>
       </div>
