@@ -1,0 +1,30 @@
+h1 {
+  color: #5B6C5D
+}
+
+nav li {
+  color: #80BCA8;
+}
+
+nav a.active {
+  color: black;
+  font-weight: bold;
+}
+
+.rectangle {
+  height: 446px;
+  width: 808px;
+  border-radius: 3rem;
+  background-color: #7BD3B6;
+  align-items: center;
+}
+
+span {
+  color: #59C9A5;
+}
+
+.wrap {
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+}
