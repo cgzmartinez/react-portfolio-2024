@@ -1,20 +1,30 @@
-import { FaPalette } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import Palette from "../assets/palette-icon.svg?react";
 
 const Navbar = () => {
 
   return (
 
-    <nav className="flex flex-row items-center justify-between pt-12 pr-10 bg-light">
+    <nav className="flex items-center justify-between pt-12 px-10">
       <div className="justify-start font-normal pl-20 text-5xl">
-        <h1>cm.</h1>
+        <p>cm.</p>
       </div>
       <div>
-        <ul className="justify-end items-center flex">
-          <li className="font-normal px-6 text-2xl">Work</li>
-          <li className="font-normal px-6 text-2xl">About</li>
-          <li className="font-normal px-6 text-2xl">Contact</li>
-          <div className="px-6">
-            <FaPalette class="h-6 w-6"></FaPalette>
+        <ul className="flex justify-end items-center pr-10">
+          <li className="font-light px-7 text-2xl">
+            <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : '')}
+            >Work</NavLink>
+          </li>
+          <li className="font-light px-7 text-2xl">
+            <NavLink to='/about' className={({ isActive }) => (isActive ? 'active' : '')}
+            >About</NavLink>
+          </li>
+          <li className="font-light px-7 text-2xl">
+            <NavLink to='/contact' className={({ isActive }) => (isActive ? 'active' : '')}
+            >Contact</NavLink>
+          </li>
+          <div className="flex px-7" >
+            <Palette className="h-10 w-10" />
           </div>
         </ul>
       </div>
