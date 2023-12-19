@@ -2,6 +2,11 @@ h1 {
   color: #5B6C5D
 }
 
+li {
+  color: #80BCA8;
+  padding-bottom: 20px;
+}
+
 nav li {
   color: #80BCA8;
 }
@@ -9,6 +14,13 @@ nav li {
 nav a.active {
   color: black;
   font-weight: bold;
+}
+
+.player {
+  height: 145px;
+  width: auto;
+  padding-left: 15rem;
+  position: absolute;
 }
 
 .rectangle {
