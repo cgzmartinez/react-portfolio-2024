@@ -1,11 +1,12 @@
-import { NavLink } from "react-router-dom";
+{/* import { NavLink } from "react-router-dom";
 import Palette from "../assets/palette-icon.svg?react";
+*/}
 
 const Navbar = () => {
 
   return (
 
-    <nav className="flex items-center justify-between pt-12 px-10">
+    {/* <nav className="flex items-center justify-between pt-12 px-10">
       <div className="justify-start font-normal pl-20 text-5xl">
         <p>cm.</p>
       </div>
@@ -29,6 +30,7 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
+  */}
   )
 }
 
