@@ -23,7 +23,7 @@ const Navbar = () => {
             <NavLink to='/contact' className={({ isActive }) => (isActive ? 'active' : '')}
             >Contact</NavLink>
           </li>
-          <div className="flex px-7" >
+          <div className="flex px-7 pb-3" >
             <Palette className="h-10 w-10" />
           </div>
         </ul>
