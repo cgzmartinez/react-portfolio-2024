@@ -28,9 +28,8 @@ nav a.active {
 
 .player {
   height: 145px;
-  width: auto;
+  width: 718;
   padding-left: 15rem;
-  position: absolute;
 }
 
 .rectangle {
