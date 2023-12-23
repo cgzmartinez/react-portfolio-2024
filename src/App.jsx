@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-{/* import Navbar from './components/navbar' */ }
+import Navbar from './components/navbar'
 import Work from './components/work'
 import About from './components/about'
 import Contact from './components/contact'
@@ -8,7 +8,7 @@ import Contact from './components/contact'
 function App() {
   return (
     <BrowserRouter>
-      {/*<Navbar />*/}
+      <Navbar />
       <div>
         <Routes>
           <Route path='/' element={<Work />} />

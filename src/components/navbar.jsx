@@ -1,17 +1,17 @@
 {/* import { NavLink } from "react-router-dom";
-import Palette from "../assets/palette-icon.svg?react";
-*/}
+import Palette from "../assets/palette-icon.svg?react"; */}
+
 
 const Navbar = () => {
 
   return (
 
-    {/* <nav className="flex items-center justify-between pt-12 px-10">
-      <div className="justify-start font-normal pl-20 text-5xl">
+    <nav className="flex items-center justify-between pl-7 p-7">
+      <div className="justify-start font-normal text-4xl">
         <p>cm.</p>
       </div>
-      <div>
-        <ul className="flex justify-end items-center pr-10">
+      {/* <div>
+        <ul className="flex justify-end items-center">
           <li className="font-light px-7 text-2xl">
             <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : '')}
             >Work</NavLink>
@@ -28,9 +28,9 @@ const Navbar = () => {
             <Palette className="h-10 w-10" />
           </div>
         </ul>
-      </div>
+  </div>*/}
     </nav>
-  */}
+
   )
 }
 
