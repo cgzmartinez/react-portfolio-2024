@@ -6,8 +6,8 @@ const Navbar = () => {
 
   return (
 
-    <nav className="flex items-center justify-between pl-7 p-7">
-      <div className="justify-start font-normal text-4xl">
+    <nav className="flex items-center justify-between pl-8 p-8">
+      <div className="justify-start font-normal text-4xl md:text-5xl">
         <p>cm.</p>
       </div>
       {/* <div>
