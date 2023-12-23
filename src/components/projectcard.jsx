@@ -1,3 +1,5 @@
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+
 const ProjectCards = () => {
 
   const cardItem = [
@@ -47,6 +49,7 @@ const ProjectCards = () => {
           <div key={index} className="bounce rounded-xl relative">
 
             <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
+              <FaArrowUpRightFromSquare className="float-right mr-4 mt-4" />
               <p className="font-bold text-2xl pl-4 pt-4">{text} </p>
               <p className="pl-4">{subtitle}</p>
             </div>
