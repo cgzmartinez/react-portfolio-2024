@@ -1,37 +1,35 @@
-{/* import { NavLink } from "react-router-dom";
-import Palette from "../assets/palette-icon.svg?react"; */}
-
+import { NavLink } from "react-router-dom";
+import Palette from "../assets/palette-icon.svg?react";
 
 const Navbar = () => {
 
   return (
 
-    <nav className="flex items-center justify-between pl-8 p-8">
+    <nav className="flex items-center justify-between p-8">
       <div className="justify-start font-normal text-4xl md:text-5xl">
         <p>cm.</p>
       </div>
-      {/* <div>
+      <div>
         <ul className="flex justify-end items-center">
-          <li className="font-light px-7 text-2xl">
+          <li className="font-light px-7 text-xl">
             <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : '')}
             >Work</NavLink>
           </li>
-          <li className="font-light px-7 text-2xl">
+          <li className="font-light px-7 text-xl">
             <NavLink to='/about' className={({ isActive }) => (isActive ? 'active' : '')}
             >About</NavLink>
           </li>
-          <li className="font-light px-7 text-2xl">
+          <li className="font-light px-7 text-xl">
             <NavLink to='/contact' className={({ isActive }) => (isActive ? 'active' : '')}
             >Contact</NavLink>
           </li>
-          <div className="flex px-7 pb-3" >
+          <div className="flex pl-7 pb-4" >
             <Palette className="h-10 w-10" />
           </div>
         </ul>
-  </div>*/}
+      </div>
     </nav>
-
-  )
-}
+  );
+};
 
 export default Navbar
