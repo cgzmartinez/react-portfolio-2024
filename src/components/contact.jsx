@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <div>
       <section className="grid gap-8 mx-20 md:grid-cols-2 md:pl-16 md:items-center md:text-left">
-        <div className="pb-10">
+        <div className="py-10">
           <h1 className="float-start text-4xl text-[#59C9A5] font-serif font-bold pb-6">Get In Touch</h1>
           <p className="text-base font-sans font-normal">Send me a message using the form or reach out on <span>LinkedIn</span> and I’ll get back to you as soon as possible.</p>
         </div>

@@ -19,7 +19,7 @@ const Work = () => {
           <h1 className="text-4xl font-serif font-bold">Projects I have worked on</h1>
         </div>
       </section>
-      <div className="p-10">
+      <div className="px-10">
         <ProjectCards />
       </div>
     </div>
