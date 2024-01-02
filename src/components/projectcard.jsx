@@ -4,45 +4,45 @@ const ProjectCards = () => {
 
   const cardItem = [
     {
-      text: "title",
-      subtitle: "subtitle",
+      text: "Title",
+      subtitle: "Subtitle",
+      image:
+        "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      text: "Title",
+      subtitle: "Subtitle",
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      text: "title",
-      subtitle: "subtitle",
+      text: "Title",
+      subtitle: "Subtitle",
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      text: "title",
-      subtitle: "subtitle",
+      text: "Title",
+      subtitle: "Subtitle",
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      text: "title",
-      subtitle: "subtitle",
+      text: "Title",
+      subtitle: "Subtitle",
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
-      text: "title",
-      subtitle: "subtitle",
-      image:
-        "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      text: "title",
-      subtitle: "subtitle",
+      text: "Title",
+      subtitle: "Subtitle",
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
   ];
 
   return (
-    <div className="max-w-[1640px] mx-auto grid md:grid-cols-3 gap-6">
+    <div className="max-w-[1640px] mx-auto grid md:grid-cols-3 gap-10 md:px-20">
 
       {cardItem.map(({ text, subtitle, image }, index) => {
         return (
@@ -55,7 +55,7 @@ const ProjectCards = () => {
             </div>
 
             <img
-              className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"
+              className="max-h-[200px] md:max-h-[250px] w-full object-cover rounded-xl"
               src={image}
               alt="/"
             />
