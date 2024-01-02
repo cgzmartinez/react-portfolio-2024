@@ -4,8 +4,11 @@ const Contact = () => {
       <section className="grid gap-8 mx-20 md:grid-cols-2 md:pl-16 md:items-center md:text-left">
         <div className="py-10">
           <h1 className="float-start text-4xl text-[#59C9A5] font-serif font-bold pb-6">Get In Touch</h1>
-          <p className="text-base font-sans font-normal">Send me a message using the form or reach out on <span>LinkedIn</span> and I’ll get back to you as soon as possible.</p>
+          <p className="text-base font-sans font-normal">Send me a message using the form or reach out on <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a> and I’ll get back to you as soon as possible.</p>
+          <div className="hidden md:block bg-[#59C9A5] rounded-xl py-20 px-20 my-20" />
+
         </div>
+
 
         <div className="flex items-center justify-center md:p-20">
           <div className="mx-auto w-full max-w-[550px]">
