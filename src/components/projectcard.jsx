@@ -46,7 +46,7 @@ const ProjectCards = () => {
 
       {cardItem.map(({ text, subtitle, image }, index) => {
         return (
-          <div key={index} className="bounce rounded-xl relative">
+          <div key={index} className="rounded-xl relative">
 
             <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
               <FaArrowUpRightFromSquare className="float-right mr-4 mt-4" />

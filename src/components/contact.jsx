@@ -65,11 +65,10 @@ const Contact = () => {
                   className="w-full resize-none rounded-xl border placeholder-gray-200 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
                 ></textarea>
               </div>
-              <div>
+              <div className="pb-10">
                 <button
                   className="hover:shadow-form rounded-xl bg-[#59C9A5] py-3 px-8 text-base font-semibold text-white outline-none"
-                >
-                  Submit
+                > Submit
                 </button>
               </div>
             </form>
