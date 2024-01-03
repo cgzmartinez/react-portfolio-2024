@@ -87,9 +87,6 @@ const Navbar = () => {
           </div>
         </ul>
       </div>
-
-      {/*Clicking off of the menu closes menu*/}
-      <div onClick={handleNav} className="fixed h-[100%] w-[100%] z-30"></div>
     </nav>
   );
 };
