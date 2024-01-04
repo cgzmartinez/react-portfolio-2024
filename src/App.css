@@ -34,3 +34,18 @@ nav a.active {
 span {
   color: #59C9A5;
 }
+
+::-moz-selection {
+  color: #FFFFFF;
+  background: #5B6C5D;
+}
+
+::-webkit-selection {
+  color: #FFFFFF;
+  background: #5B6C5D;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #5B6C5D;
+}
