@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Palette from "../assets/palette-icon.svg?react";
-import { FaBars, FaGithub, FaLinkedin, FaXmark } from "react-icons/fa6";
+import { FaBars, FaGithub, FaLinkedin, FaXmark, FaPalette } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
 
 const Navbar = () => {
@@ -56,13 +55,13 @@ const Navbar = () => {
         </div>
         <div className="grid grid-cols-4 absolute inset-x-0 bottom-0 p-6">
           <a href="https://github.com/cgzmartinez" target="_blank" rel="noreferrer">
-            <FaGithub size={30} />
+            <FaGithub className="hover:fill-[#6e5494]" size={30} />
           </a>
           <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noreferrer">
-            <FaLinkedin size={30} />
+            <FaLinkedin className="hover:fill-[#0077B5]" size={30} />
           </a>
           <a href="https://www.upwork.com/freelancers/~0181d2b492c6b37a9e" target="_blank" rel="noreferrer" >
-            <SiUpwork size={30} />
+            <SiUpwork className="hover:fill-[#14A800]" size={30} />
           </a>
         </div>
       </ul>
@@ -82,8 +81,10 @@ const Navbar = () => {
             <NavLink to='/contact' className={({ isActive }) => (isActive ? 'active' : '')}
             >Contact</NavLink>
           </li>
-          <div className="flex pl-7 pb-4" >
-            <Palette className="h-10 w-10" />
+          <div className="pb-5 pl-7">
+            <button className="flex bg-[#59C9A5] rounded-[7px] p-[7px]" >
+              <FaPalette className="h-5 w-5" />
+            </button>
           </div>
         </ul>
       </div>
