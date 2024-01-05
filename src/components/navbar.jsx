@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaGithub, FaLinkedin, FaXmark, FaPalette } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
+import { motion } from "framer-motion"
 
 const Navbar = () => {
 
@@ -82,9 +83,16 @@ const Navbar = () => {
             >Contact</NavLink>
           </li>
           <div className="pb-5 pl-7">
-            <button className="flex bg-[#59C9A5] rounded-[7px] p-[7px]" >
+            <motion.button
+              whileHover={{
+                scale: 1.2,
+                rotate: 90
+              }}
+              whileTap={{
+                scale: .9
+              }} className="flex bg-[#59C9A5] rounded-[7px] p-[7px]" >
               <FaPalette className="h-5 w-5" />
-            </button>
+            </motion.button>
           </div>
         </ul>
       </div>
