@@ -17,8 +17,16 @@ li {
   padding-bottom: 20px;
 }
 
+li:hover {
+  color: #5B6C5D
+}
+
 nav li {
   color: #80BCA8;
+}
+
+nav li:hover {
+  color: #5B6C5D
 }
 
 nav a.active {
