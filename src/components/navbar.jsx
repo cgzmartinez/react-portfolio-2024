@@ -24,7 +24,7 @@ const Navbar = () => {
 
       {/*Toggle Navbar's Mobile Menu*/}
       <button onClick={handleNav} className='justify-end items-center block md:hidden'>
-        {nav ? <FaXmark size={30} /> : <FaBars size={30} />}
+        {nav ? <FaXmark size={30} /> : <FaBars className="hover:fill-[#59C9A5]" size={30} />}
       </button>
 
       {/*Mobile Navbar*/}

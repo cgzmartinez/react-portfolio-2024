@@ -37,7 +37,7 @@ const ProjectCards = () => {
     },
     {
       title: "Meet App",
-      subtitle: "A PWA (Progressive Web Application) made with React that uses the Google Calendar API to fetch upcoming events.",
+      subtitle: "A PWA (Progressive Web Application) made with React that uses a Calendar API to fetch upcoming events.",
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
@@ -69,14 +69,14 @@ const ProjectCards = () => {
                 />
               </CardHeader>
               <CardBody>
-                <Typography variant="h3" color="blue-gray">
+                <Typography classname="font-serif" variant="h3" color="blue-gray">
                   {title}
                 </Typography>
                 <Typography variant="lead" color="gray" className="mt-3 font-normal">
                   {subtitle}
                 </Typography>
               </CardBody>
-              {/*} <CardFooter className="flex items-center justify-between">
+              {/* <CardFooter className="flex items-center justify-between">
                 <div className="flex items-center -space-x-3">
                   <Tooltip content="Natali Craig">
                     <Avatar
