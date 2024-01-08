@@ -4,15 +4,15 @@ import {
   CardBody,
   CardFooter,
   Typography,
+  Tooltip,
 
 } from "@material-tailwind/react";
 import { DiMongodb } from "react-icons/di";
 import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa6";
-import { SiExpress, SiTypescript } from "react-icons/si";
+import { SiCucumber, SiExpo, SiExpress, SiFirebase, SiJest, SiTypescript } from "react-icons/si";
 
 
 const ProjectCards = () => {
-
 
   const cardItem = [
     {
@@ -22,12 +22,13 @@ const ProjectCards = () => {
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       icon:
         <div className="flex">
-          <DiMongodb size={25} />
-          <SiExpress className="mx-1" size={25} />
-          <FaReact size={25} />
-          <FaNodeJs className="mx-1" size={25} />
+          <DiMongodb className="mr-2" size={25} />
+          <SiExpress className="mr-2" size={25} />
+          <FaReact className="mr-2" size={25} />
+          <FaNodeJs size={25} />
         </div>,
-      date: "January 12, 2024"
+      date: "Jan 16, 2024",
+      tooltip: "MERN Stack"
 
     },
     {
@@ -39,7 +40,7 @@ const ProjectCards = () => {
         <div>
 
         </div>,
-      date: ""
+      date: "Jan 14, 2024"
     },
     {
       title: "Keep",
@@ -50,7 +51,7 @@ const ProjectCards = () => {
         <div>
 
         </div>,
-      date: ""
+      date: "Jan 12, 2024"
     },
     {
       title: "myFlix Angular App",
@@ -62,7 +63,10 @@ const ProjectCards = () => {
           <FaAngular size={25} />
           <SiTypescript className="p-[2px] ml-2" size={25} />
         </div>,
-      date: ""
+      date: "Nov 14, 2022",
+      link: "https://cgzmartinez.github.io/myFlix-Angular-Client/welcome",
+      tooltip: "Angular with TypeScript"
+
 
     },
     {
@@ -71,10 +75,14 @@ const ProjectCards = () => {
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       icon:
-        <div>
-
+        <div className="flex">
+          <FaReact className="mr-2" size={25} />
+          <SiJest className="p-[1px] mr-2" size={25} />
+          <SiCucumber className="p-[1px]" size={25} />
         </div>,
-      date: ""
+      date: "Nov 12, 2022",
+      link: "https://cgzmartinez.github.io/meet",
+      tooltip: "React with Testing"
     },
     {
       title: "Chat App",
@@ -82,21 +90,25 @@ const ProjectCards = () => {
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       icon:
-        <div>
-
+        <div className="flex">
+          <FaReact className="mr-2" size={25} />
+          <SiFirebase className="mr-2" size={25} />
+          <SiExpo size={25} />
         </div>,
-      date: ""
+      date: "Nov 2, 2022",
+      link: "https://github.com/cgzmartinez/chat-app",
+      tooltip: "React Native with Firebase"
     },
   ];
 
   return (
     <div className="max-w-[1640px] mx-auto grid md:grid-cols-2 gap-10 pb-10 md:px-20">
 
-      {cardItem.map(({ title, subtitle, date, image, icon }, index) => {
+      {cardItem.map(({ tooltip, title, subtitle, link, image, icon, date }, index) => {
         return (
           <div key={index} className="bounce hover:drop-shadow-xl relative">
 
-            <Card className="max-w-[40rem] max-h-[40rem] rounded-[25px] overflow-hidden">
+            <a href={link} target="_blank" rel="noreferrer"><Card className="max-w-[40rem] max-h-[40rem] rounded-[25px] overflow-hidden">
               <CardHeader
                 floated={false}
                 shadow={false}
@@ -118,14 +130,27 @@ const ProjectCards = () => {
               </CardBody>
               <CardFooter className="flex items-center justify-between">
                 <div className="flex items-center -space-x-3">
-
-                  <icon className="">{icon}</icon>
-
+                  <Tooltip
+                    position="top"
+                    content={
+                      <Typography className="font-medium" color="blue-gray">
+                        {tooltip}
+                      </Typography>
+                    }
+                    animate={{
+                      mount: { scale: 1, y: 0 },
+                      unmount: { scale: 0, y: 25 },
+                    }}
+                    className="border border-blue-gray-50 bg-white px-3 py-2 shadow-xl shadow-black/10"
+                  >
+                    <icon>{icon}</icon>
+                  </Tooltip>
                 </div>
                 <Typography className="font-normal">{date}</Typography>
               </CardFooter>
-            </Card>
+            </Card></a>
           </div>
+
         );
       })}
     </div>
