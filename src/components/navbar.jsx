@@ -19,12 +19,12 @@ const Navbar = () => {
     <nav className="flex items-center justify-between p-8">
       {/*Main Logo*/}
       <div className="justify-start font-normal text-4xl md:text-5xl">
-        <a href="/"><p>cm.</p></a>
+        <a href="/"><motion.p whileHover={{ scale: 1.25, }}>cm.</motion.p></a>
       </div>
 
       {/*Toggle Navbar's Mobile Menu*/}
       <button onClick={handleNav} className='justify-end items-center block md:hidden'>
-        {nav ? <FaXmark size={30} /> : <FaBars className="hover:fill-[#59C9A5]" size={30} />}
+        {nav ? <FaXmark size={30} /> : <FaBars size={30} />}
       </button>
 
       {/*Mobile Navbar*/}

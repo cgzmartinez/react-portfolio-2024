@@ -32,7 +32,7 @@ const ProjectCards = () => {
 
     },
     {
-      title: "Schma",
+      title: "Schema",
       subtitle: "A calendar planning solution made with blank and blank. Work out hours before you finalize on your calendar.",
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -60,8 +60,8 @@ const ProjectCards = () => {
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       icon:
         <div className="flex">
-          <FaAngular size={25} />
-          <SiTypescript className="p-[2px] ml-2" size={25} />
+          <FaAngular className="mr-2" size={25} />
+          <SiTypescript className="p-[2px]" size={25} />
         </div>,
       date: "Nov 14, 2022",
       link: "https://cgzmartinez.github.io/myFlix-Angular-Client/welcome",
