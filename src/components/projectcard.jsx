@@ -108,7 +108,7 @@ const ProjectCards = () => {
         return (
           <div key={index} className="bounce hover:drop-shadow-xl relative">
 
-            <a href={link} target="_blank" rel="noreferrer"><Card className="max-w-[40rem] max-h-[40rem] rounded-[25px] overflow-hidden">
+            <a href={link} target="_blank" rel="noreferrer"><Card className="max-w-[40rem] max-h-[30rem] rounded-[25px] overflow-hidden">
               <CardHeader
                 floated={false}
                 shadow={false}
