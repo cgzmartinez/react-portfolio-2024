@@ -17,7 +17,7 @@ li {
   padding-bottom: 20px;
 }
 
-li:hover {
+footer li:hover {
   color: #5B6C5D
 }
 
@@ -32,6 +32,10 @@ nav li:hover {
 nav a.active {
   color: black;
   font-weight: bold;
+}
+
+.NavLink:hover {
+  color: #5B6C5D
 }
 
 .player {
