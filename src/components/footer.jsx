@@ -10,12 +10,14 @@ const Footer = () => {
         </div>
         <div className="pt-10 pl-5 md:text-left md:pt-6 md:pl-20">
           <h1 className="font-serif font-bold text-lg md:text-xl">Find me here</h1>
-          <ul className=" font-serif font-medium text-sm md:text-lg pt-10">
-            <a href="https://github.com/cgzmartinez" target="_blank" rel="noreferrer"><li>GitHub</li></a>
-            <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noreferrer"><li>Linkedin</li></a>
-            <a href="https://medium.com/@cgzmarti" target="_blank" rel="noreferrer"><li>Medium</li></a>
-            <a href="https://www.upwork.com/freelancers/~0181d2b492c6b37a9e" target="_blank" rel="noreferrer"><li>Upwork</li></a>
-          </ul>
+          <footer>
+            <ul className=" font-serif font-medium text-sm md:text-lg pt-6">
+              <a href="https://github.com/cgzmartinez" target="_blank" rel="noreferrer"><li>GitHub</li></a>
+              <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noreferrer"><li>Linkedin</li></a>
+              <a href="https://medium.com/@cgzmarti" target="_blank" rel="noreferrer"><li>Medium</li></a>
+              <a href="https://www.upwork.com/freelancers/~0181d2b492c6b37a9e" target="_blank" rel="noreferrer"><li>Upwork</li></a>
+            </ul>
+          </footer>
         </div>
       </div>
       <div className="flex items-center justify-center py-10">
