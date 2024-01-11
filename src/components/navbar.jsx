@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaGithub, FaLinkedin, FaXmark, FaPalette } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
-import { motion } from "framer-motion"
+import { m } from "framer-motion"
 
 const Navbar = () => {
 
@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between p-8">
       {/*Main Logo*/}
       <div className="justify-start font-normal text-4xl md:text-5xl">
-        <a href="/"><motion.p whileHover={{ scale: 1.25, }}>cm.</motion.p></a>
+        <a href="/"><m.p whileHover={{ scale: 1.25, }}>cm.</m.p></a>
       </div>
 
       {/*Toggle Navbar's Mobile Menu*/}
@@ -83,7 +83,7 @@ const Navbar = () => {
             >Contact</NavLink>
           </li>
           <div className="pb-5 pl-7">
-            <motion.button
+            <m.button
               whileHover={{
                 scale: 1.2,
                 rotate: 90
@@ -92,7 +92,7 @@ const Navbar = () => {
                 scale: .9
               }} className="flex bg-[#59C9A5] rounded-[7px] p-[7px]" >
               <FaPalette className="h-5 w-5" />
-            </motion.button>
+            </m.button>
           </div>
         </ul>
       </div>
