@@ -4,11 +4,12 @@ import Work from './components/work'
 import About from './components/about'
 import Contact from './components/contact'
 import Footer from './components/footer'
+import { AnimatePresence } from 'framer-motion'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="">
+    <AnimatePresence>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path='/' element={<Work />} />
@@ -16,8 +17,8 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </AnimatePresence>
   )
 }
 

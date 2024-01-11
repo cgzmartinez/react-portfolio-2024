@@ -1,15 +1,18 @@
+import { motion } from "framer-motion";
+
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: .5 }}>
       <section className="grid gap-8 mx-20 md:grid-cols-2 md:pl-16 md:items-center md:text-left">
         <div className="py-10">
           <h1 className="float-start text-4xl text-[#59C9A5] font-serif font-bold pb-6">Get In Touch</h1>
           <p className="text-base font-sans font-normal">Send me a message using the form or reach out on <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a> and I’ll get back to you as soon as possible.</p>
           <div className="hidden md:block bg-[#59C9A5] rounded-xl py-20 px-20 my-20" />
-
         </div>
-
-
         <div className="flex items-center justify-center md:p-20">
           <div className="mx-auto w-full max-w-[550px]">
             <form>
@@ -20,7 +23,7 @@ const Contact = () => {
                   name="name"
                   id="name"
                   placeholder="Johnny Silverhand"
-                  className="w-full rounded-xl border placeholder-gray-200 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                  className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
                 />
               </div>
               <div className="mb-5">
@@ -35,7 +38,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   placeholder="email@gmail.com"
-                  className="w-full rounded-xl border placeholder-gray-200 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                  className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
                 />
               </div>
               <div className="mb-5">
@@ -50,7 +53,7 @@ const Contact = () => {
                   name="phone"
                   id="phone"
                   placeholder="123-456-7890"
-                  className="w-full rounded-xl border placeholder-gray-200 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                  className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
                 />
               </div>
               <div className="mb-5">
@@ -65,20 +68,21 @@ const Contact = () => {
                   name="message"
                   id="message"
                   placeholder="Write your message here"
-                  className="w-full resize-none rounded-xl border placeholder-gray-200 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                  className="w-full resize-none rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
                 ></textarea>
               </div>
               <div className="pb-10">
-                <button
-                  className="rounded-xl bg-[#59C9A5] py-3 px-8 text-base font-semibold text-white outline-none"
+                <motion.button
+                  whileHover={{ scale: 1.15 }}
+                  className="rounded-[5px] bg-[#59C9A5] font-serif p-1 px-2 text-lg text-white outline-none"
                 > Submit
-                </button>
+                </motion.button>
               </div>
             </form>
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   )
 }
 
