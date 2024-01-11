@@ -70,7 +70,7 @@ const Contact = () => {
               </div>
               <div className="pb-10">
                 <button
-                  className="hover:shadow-form rounded-xl bg-[#59C9A5] py-3 px-8 text-base font-semibold text-white outline-none"
+                  className="rounded-xl bg-[#59C9A5] py-3 px-8 text-base font-semibold text-white outline-none"
                 > Submit
                 </button>
               </div>
