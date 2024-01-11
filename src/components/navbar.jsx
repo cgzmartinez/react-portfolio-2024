@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars, FaGithub, FaLinkedin, FaXmark, FaPalette } from "react-icons/fa6";
+import { FaBars, FaCodepen, FaGithub, FaLinkedin, FaXmark, FaPalette } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
-import { m } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Navbar = () => {
 
@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between p-8">
       {/*Main Logo*/}
       <div className="justify-start font-normal text-4xl md:text-5xl">
-        <a href="/"><m.p whileHover={{ scale: 1.25, }}>cm.</m.p></a>
+        <a href="/"><motion.p whileHover={{ scale: 1.25, }}>cm.</motion.p></a>
       </div>
 
       {/*Toggle Navbar's Mobile Menu*/}
@@ -55,8 +55,11 @@ const Navbar = () => {
           </li>
         </div>
         <div className="grid grid-cols-4 absolute inset-x-0 bottom-0 p-6">
+          <a href="https://codepen.io/c_martinez" target="_blank" rel="noreferrer">
+            <FaCodepen className="hover:fill-[#7fd0e1]" size={30} />
+          </a>
           <a href="https://github.com/cgzmartinez" target="_blank" rel="noreferrer">
-            <FaGithub className="hover:fill-[#6e5494]" size={30} />
+            <FaGithub className="hover:fill-[#7a38dd]" size={30} />
           </a>
           <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noreferrer">
             <FaLinkedin className="hover:fill-[#0077B5]" size={30} />
@@ -83,7 +86,7 @@ const Navbar = () => {
             >Contact</NavLink>
           </li>
           <div className="pb-5 pl-7">
-            <m.button
+            <motion.button
               whileHover={{
                 scale: 1.2,
                 rotate: 90
@@ -92,7 +95,7 @@ const Navbar = () => {
                 scale: .9
               }} className="flex bg-[#59C9A5] rounded-[7px] p-[7px]" >
               <FaPalette className="h-5 w-5" />
-            </m.button>
+            </motion.button>
           </div>
         </ul>
       </div>
