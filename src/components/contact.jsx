@@ -7,24 +7,30 @@ const Contact = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: .5 }}>
-      <section className="grid gap-8 mx-20 md:grid-cols-2 md:pl-16 md:items-center md:text-left">
-        <div className="py-10">
-          <h1 className="float-start text-4xl text-[#59C9A5] font-serif font-bold pb-6">Get In Touch</h1>
+      <section className="grid gap-4 mx-10 md:p-10 md:px-[150px] md:grid-cols-1 md:items-center md:text-left">
+        <div className="my-10 md:my-1">
+          <h1 className="float-start md:text-[60px] text-4xl font-serif font-bold pb-6">Get In Touch</h1>
           <p className="text-base font-sans font-normal">Send me a message using the form or reach out on <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a> and I’ll get back to you as soon as possible.</p>
-          <div className="hidden md:block bg-[#59C9A5] rounded-xl py-20 px-20 my-20" />
         </div>
-        <div className="flex items-center justify-center md:p-20">
-          <div className="mx-auto w-full max-w-[550px]">
+        <div className="flex items-center justify-center">
+          <div className="mx-auto w-full">
             <form>
               <div className="mb-5">
                 <label htmlFor="name" className="mb-3 block text-base font-medium text-[#5B6C5D]">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Johnny Silverhand"
-                  className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
-                />
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Johnny"
+                    className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                  />
+                  <input type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Silverhand"
+                    className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]" />
+                </div>
               </div>
               <div className="mb-5">
                 <label
