@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars, FaCodepen, FaGithub, FaLinkedin, FaXmark, FaPalette } from "react-icons/fa6";
+import { FaBars, FaCodepen, FaGithub, FaLinkedin, FaXmark, FaSun } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
 import { motion } from "framer-motion"
 
@@ -21,12 +21,22 @@ const Navbar = () => {
       <div className="justify-start font-normal text-4xl md:text-5xl">
         <a href="/"><motion.p whileHover={{ scale: 1.25, }}>cm.</motion.p></a>
       </div>
-
-      {/*Toggle Navbar's Mobile Menu*/}
-      <button onClick={handleNav} className='justify-end items-center block md:hidden'>
-        {nav ? <FaXmark size={30} /> : <FaBars size={30} />}
-      </button>
-
+      <div className="flex items-centerjustify-end">
+        <motion.button
+          whileHover={{
+            scale: 1.2,
+            rotate: 90
+          }}
+          whileTap={{
+            scale: .9
+          }} className="block md:hidden bg-[#59C9A5] rounded-[7px] p-[7px] mx-3" >
+          <FaSun className="h-5 w-5" />
+        </motion.button>
+        {/*Toggle Navbar's Mobile Menu*/}
+        <button onClick={handleNav} className='block md:hidden'>
+          {nav ? <FaXmark size={30} /> : <FaBars size={30} />}
+        </button>
+      </div>
       {/*Mobile Navbar*/}
       <ul
         className={
@@ -94,7 +104,7 @@ const Navbar = () => {
               whileTap={{
                 scale: .9
               }} className="flex bg-[#59C9A5] rounded-[7px] p-[7px]" >
-              <FaPalette className="h-5 w-5" />
+              <FaSun className="h-5 w-5" />
             </motion.button>
           </div>
         </ul>
