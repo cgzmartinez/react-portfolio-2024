@@ -80,7 +80,7 @@ const Contact = () => {
               <div className="pb-10">
                 <motion.button
                   whileHover={{ scale: 1.15 }}
-                  className="rounded-[5px] bg-[#59C9A5] font-serif p-1 px-2 text-lg text-white outline-none"
+                  className="rounded-[5px] bg-[#59C9A5] font-serif font-bold p-1 px-2 text-lg text-white outline-none"
                 > Submit
                 </motion.button>
               </div>
