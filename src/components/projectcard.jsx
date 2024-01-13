@@ -117,16 +117,14 @@ const ProjectCards = () => {
               >
                 <img
                   src={image}
-                  alt="ui/ux review check"
+                  alt="Project Image"
                 />
               </CardHeader>
               <CardBody>
-                <Typography classname="font-serif" variant="h3" color="blue-gray">
-                  {title}
-                </Typography>
+                <Typography className="font-serif" variant="h3" color="blue-gray">
+                  {title} </Typography>
                 <Typography variant="lead" color="gray" className="mt-3 font-normal">
-                  {subtitle}
-                </Typography>
+                  {subtitle} </Typography>
               </CardBody>
               <CardFooter className="flex items-center justify-between">
                 <div className="flex items-center -space-x-3">
@@ -134,8 +132,7 @@ const ProjectCards = () => {
                     position="top"
                     content={
                       <Typography className="font-medium" color="blue-gray">
-                        {tooltip}
-                      </Typography>
+                        {tooltip} </Typography>
                     }
                     animate={{
                       mount: { scale: 1, y: 0 },
@@ -143,12 +140,13 @@ const ProjectCards = () => {
                     }}
                     className="border border-blue-gray-50 bg-white px-3 py-2 shadow-xl shadow-black/10"
                   >
-                    <icon>{icon}</icon>
+                    <i>{icon}</i>
                   </Tooltip>
                 </div>
-                <Typography className="font-normal">{date}</Typography>
+                <Typography className="font-normal">{date} </Typography>
               </CardFooter>
-            </Card></a>
+            </Card>
+            </a>
           </div>
 
         );
