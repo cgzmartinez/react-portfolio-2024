@@ -18,12 +18,22 @@ const Work = () => {
           <div className="flex items-center">
             <a href={Resume} target="_blank" rel="noreferrer">
               <motion.button
-                whileHover={{ scale: 1.15 }}
+                whileHover={{
+                  scale: 1.15
+                }}
+                whileTap={{
+                  scale: .9
+                }}
                 className="rounded-[5px] bg-[#59C9A5] font-serif p-1 px-2 my-6 font-bold text-lg text-white outline-none"
               > Resume
               </motion.button>
             </a>
-            <motion.a whileHover={{ scale: 1.15 }} href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noreferrer">
+            <motion.a whileHover={{
+              scale: 1.15
+            }}
+              whileTap={{
+                scale: .9
+              }} href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noreferrer">
               <FaLinkedin size={40} className="mx-3 fill-[#59C9A5]" />
             </motion.a>
           </div>
