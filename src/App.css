@@ -21,20 +21,12 @@ footer li:hover {
   color: #5B6C5D
 }
 
-nav li {
-  color: #80BCA8;
-}
-
-nav li:hover {
-  color: #5B6C5D
-}
-
 nav a.active {
   color: #5B6C5D;
   font-weight: bold;
 }
 
-.NavLink:hover {
+nav li:hover {
   color: #5B6C5D
 }
 
