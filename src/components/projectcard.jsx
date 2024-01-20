@@ -108,7 +108,7 @@ const ProjectCards = () => {
         return (
           <div key={index} className="bounce hover:drop-shadow-xl relative">
 
-            <a href={link} target="_blank" rel="noreferrer"><Card className="max-w-[40rem] max-h-[30rem] rounded-[25px] overflow-hidden">
+            <a href={link} target="_blank" rel="noreferrer"><Card className="max-w-[40rem] max-h-[30rem] rounded-[25px] overflow-hidden bg-transparent">
               <CardHeader
                 floated={false}
                 shadow={false}
@@ -120,30 +120,30 @@ const ProjectCards = () => {
                   alt="Project Image"
                 />
               </CardHeader>
-              <CardBody>
-                <Typography className="font-serif" variant="h3" color="blue-gray">
+              <CardBody className="dark:bg-[#353535]">
+                <Typography className="font-serif dark:text-white/80" variant="h3" color="blue-gray">
                   {title} </Typography>
-                <Typography variant="lead" color="gray" className="mt-3 font-normal">
+                <Typography className="mt-3 font-normal dark:text-white/60" variant="lead" color="gray" >
                   {subtitle} </Typography>
               </CardBody>
-              <CardFooter className="flex items-center justify-between">
-                <div className="flex items-center -space-x-3">
+              <CardFooter className="flex items-center justify-between dark:bg-[#353535]">
+                <div className="flex items-center">
                   <Tooltip
                     position="top"
                     content={
-                      <Typography className="font-medium" color="blue-gray">
+                      <Typography className="font-medium dark:text-white" color="blue-gray">
                         {tooltip} </Typography>
                     }
                     animate={{
                       mount: { scale: 1, y: 0 },
                       unmount: { scale: 0, y: 25 },
                     }}
-                    className="border border-blue-gray-50 bg-white px-3 py-2 shadow-xl shadow-black/10"
+                    className="border border-blue-gray-50 dark:border-[#505050] bg-white dark:bg-[#505050] px-3 py-2 shadow-xl shadow-black/10"
                   >
                     <i>{icon}</i>
                   </Tooltip>
                 </div>
-                <Typography className="font-normal">{date} </Typography>
+                <Typography className="font-normal dark:text-white/60">{date} </Typography>
               </CardFooter>
             </Card>
             </a>

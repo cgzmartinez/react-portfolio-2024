@@ -10,13 +10,15 @@ function App() {
   return (
     <AnimatePresence>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Work />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
-        <Footer />
+        <div className='dark:bg-gray-900'>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Work />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+          <Footer />
+        </div>
       </BrowserRouter>
     </AnimatePresence>
   )

@@ -4,12 +4,12 @@ const Footer = () => {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10 md:p-20 md:px-20">
         <div className="md:pt-6 md:pl-5 md:ml-20">
-          <div className="flex pl-5 bg-[#E9EEE8]/70 backdrop-blur-sm h-[85px] w-[full] md:w-[auto] rounded-[50px] items-center outline-none">
+          <div className="flex pl-5 bg-[#E9EEE8]/70 dark:bg-[#b6cbb1]/20 backdrop-blur-sm h-[85px] w-[full] md:w-[auto] rounded-[50px] items-center outline-none">
             <FaSpotify className="fill-[#59C9A5]" size={45} />
           </div>
         </div>
         <div className="pt-10 text-center md:text-left md:pt-6 md:pl-20">
-          <h1 className="font-serif font-bold text-lg md:text-xl">Find me here</h1>
+          <h1 className="font-serif font-bold text-lg md:text-xl dark:text-[#829d85]">Find me here</h1>
           <footer>
             <ul className="font-serif font-medium text-sm md:text-lg pt-6">
               <a href="https://codepen.io/c_martinez" target="_blank" rel="noreferrer"><li>CodePen</li></a>
@@ -23,7 +23,7 @@ const Footer = () => {
 
       </div>
       <div className="flex items-center justify-center py-10">
-        <p className="text-xs">Designed and built by <a href="https://github.com/cgzmartinez" target="_blank" rel="noreferrer"><span>Carlos Martinez</span></a></p>
+        <p className="text-xs dark:text-white/50">Designed and built by <a href="https://github.com/cgzmartinez" target="_blank" rel="noreferrer"><span>Carlos Martinez</span></a></p>
       </div>
     </div>
   )

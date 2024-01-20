@@ -8,9 +8,9 @@ const Contact = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: .5 }}>
       <section className="grid gap-4 mx-10 md:p-10 md:px-[150px] md:grid-cols-1 md:items-center md:text-left">
-        <div className="my-10 md:my-1">
-          <h1 className="float-start md:text-[60px] text-4xl font-serif font-bold pb-6">Get In Touch</h1>
-          <p className="text-base font-sans font-normal">Send me a message using the form or reach out on <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a> and I’ll get back to you as soon as possible.</p>
+        <div className="my-10 md:my-5">
+          <h1 className="float-start md:text-[60px] text-4xl font-serif font-bold pb-6 dark:text-[#a0c2a4]">Get In Touch</h1>
+          <p className="text-base font-sans font-normal dark:text-white/60">Send me a message using the form or reach out on <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a> and I’ll get back to you as soon as possible.</p>
         </div>
         <div className="flex items-center justify-center">
           <div className="mx-auto w-full">

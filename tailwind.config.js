@@ -21,5 +21,6 @@ export default withMT({
     },
   },
   plugins: [],
+  darkMode: "class",
 })
 

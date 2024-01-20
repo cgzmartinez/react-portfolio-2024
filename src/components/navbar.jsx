@@ -2,7 +2,9 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBarsStaggered, FaCodepen, FaGithub, FaLinkedin, FaXmark, /*FaSun*/ } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import Toggle from "./toggle";
+import DeskToggle from "./desktoggle";
 
 const Navbar = () => {
 
@@ -18,37 +20,30 @@ const Navbar = () => {
 
     <nav className="flex items-center justify-between p-8">
       {/*Main Logo*/}
-      <div className="justify-start font-normal text-4xl md:text-5xl">
-        <a href="/"><motion.p whileHover={{ scale: 1.25, }}>cm.</motion.p></a>
+      <div className="justify-start font-normal text-4xl md:text-5xl dark:text-[#829d85]">
+        <NavLink to="/"><motion.p className="text-black dark:text-[#59C9A5]" whileHover={{ scale: 1.25, }}>cm.</motion.p></NavLink>
       </div>
       <div className="flex items-centerjustify-end">
-
-        {/*}
-        <motion.button
-          whileTap={{
-            scale: .9
-          }} className="block md:hidden bg-[#59C9A5] rounded-[7px] p-[7px] mx-3" >
-          <FaSun className="h-5 w-5" />
-        </motion.button>
-        */}
+        <Toggle />
 
         {/*Toggle Navbar's Mobile Menu*/}
         <button onClick={handleNav} className='block md:hidden'>
-          {nav ? <FaXmark size={30} /> : <FaBarsStaggered size={30} />}
+          {nav ? <FaXmark className="dark:fill-[#59C9A5]" size={30} /> : <FaBarsStaggered className="dark:fill-[#59C9A5]" size={30} />}
         </button>
       </div>
+
       {/*Mobile Navbar*/}
       <ul
         className={
           nav
-            ? 'fixed z-40 md:hidden left-0 top-0 w-[70%] h-full bg-white rounded-r-3xl drop-shadow-2xl ease-in-out duration-500'
+            ? 'fixed z-40 md:hidden left-0 top-0 w-[70%] h-full bg-white dark:bg-[#2a2a2a] rounded-r-3xl drop-shadow-2xl ease-in-out duration-500'
             : 'ease-in-out w-[70%] duration-500 fixed top-0 bottom-0 left-[-100%]'
         }
       >
 
         {/* Mobile Navigation Items */}
         <div className="justify-start font-normal text-4xl md:text-5xl p-8">
-          <a href="/"><p>cm.</p></a>
+          <NavLink className="dark:text-[#59C9A5]" to="/"><p>cm.</p></NavLink>
         </div>
         <div onClick={handleNav} className="p-8">
           <li className="font-light pb-10 text-xl">
@@ -66,16 +61,16 @@ const Navbar = () => {
         </div>
         <div className="grid grid-cols-4 absolute inset-x-0 bottom-0 p-6">
           <a href="https://codepen.io/c_martinez" target="_blank" rel="noreferrer">
-            <FaCodepen className="hover:fill-[#7fd0e1]" size={30} />
+            <FaCodepen className="hover:fill-[#7fd0e1] dark:fill-[#59C9A5]" size={30} />
           </a>
           <a href="https://github.com/cgzmartinez" target="_blank" rel="noreferrer">
-            <FaGithub className="hover:fill-[#7a38dd]" size={30} />
+            <FaGithub className="hover:fill-[#7a38dd] dark:fill-[#59C9A5]" size={30} />
           </a>
           <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noreferrer">
-            <FaLinkedin className="hover:fill-[#0077B5]" size={30} />
+            <FaLinkedin className="hover:fill-[#0077B5] dark:fill-[#59C9A5]" size={30} />
           </a>
           <a href="https://www.upwork.com/freelancers/~0181d2b492c6b37a9e" target="_blank" rel="noreferrer" >
-            <SiUpwork className="hover:fill-[#14A800]" size={30} />
+            <SiUpwork className="hover:fill-[#14A800] dark:fill-[#59C9A5]" size={30} />
           </a>
         </div>
       </ul>
@@ -96,20 +91,7 @@ const Navbar = () => {
             >Contact</NavLink>
           </li>
           <div className="pb-5 pl-6">
-
-            {/*}
-            <motion.button
-              whileHover={{
-                scale: 1.2,
-                rotate: 90
-              }}
-              whileTap={{
-                scale: .9
-              }} className="flex bg-[#59C9A5] rounded-[7px] p-[7px]" >
-              <FaSun className="h-5 w-5" />
-            </motion.button>
-            */}
-
+            <DeskToggle />
           </div>
         </ul>
       </div>
