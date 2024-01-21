@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBarsStaggered, FaCodepen, FaGithub, FaLinkedin, FaXmark, /*FaSun*/ } from "react-icons/fa6";
+import { FaBarsStaggered, FaCodepen, FaGithub, FaLinkedin, FaXmark } from "react-icons/fa6";
 import { SiUpwork } from "react-icons/si";
 import { motion } from "framer-motion";
 import Toggle from "./toggle";
@@ -19,6 +19,7 @@ const Navbar = () => {
   return (
 
     <nav className="flex items-center justify-between p-8">
+
       {/*Main Logo*/}
       <div className="justify-start font-normal text-4xl md:text-5xl dark:text-[#829d85]">
         <NavLink to="/"><motion.p className="text-black dark:text-[#59C9A5]" whileHover={{ scale: 1.25, }}>cm.</motion.p></NavLink>
@@ -43,7 +44,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
         <div className="justify-start font-normal text-4xl md:text-5xl p-8">
-          <NavLink className="dark:text-[#59C9A5]" to="/"><p>cm.</p></NavLink>
+          <NavLink className="text-black dark:text-[#59C9A5]" to="/"><p>cm.</p></NavLink>
         </div>
         <div onClick={handleNav} className="p-8">
           <li className="font-light pb-10 text-xl">

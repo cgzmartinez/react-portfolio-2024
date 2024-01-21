@@ -13,29 +13,29 @@ const Contact = () => {
           <p className="text-base font-sans font-normal dark:text-white/60">Send me a message using the form or reach out on <a href="https://www.linkedin.com/in/carlos-g-martinez/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span></a> and I’ll get back to you as soon as possible.</p>
         </div>
         <div className="flex items-center justify-center">
-          <div className="mx-auto w-full">
+          <div className="dark:bg-[#353535] rounded-[25px] md:p-10 p-5 mb-10 mx-auto w-full">
             <form>
               <div className="mb-5">
-                <label htmlFor="name" className="mb-3 block text-base font-medium text-[#5B6C5D]">Name</label>
+                <label htmlFor="name" className="mb-3 block text-base font-medium text-[#5B6C5D] dark:text-[#a0c2a4]">Name</label>
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="Johnny"
-                    className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                    className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:border-gray-600 dark:bg-[#353535]"
                   />
                   <input type="text"
                     name="name"
                     id="name"
                     placeholder="Silverhand"
-                    className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]" />
+                    className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5]  dark:border-gray-600 dark:bg-[#353535]" />
                 </div>
               </div>
               <div className="mb-5">
                 <label
                   htmlFor="email"
-                  className="mb-3 block text-base font-medium text-[#5B6C5D]"
+                  className="mb-3 block text-base font-medium text-[#5B6C5D] dark:text-[#a0c2a4]"
                 >
                   Email
                 </label>
@@ -44,13 +44,13 @@ const Contact = () => {
                   name="email"
                   id="email"
                   placeholder="email@gmail.com"
-                  className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                  className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:border-gray-600 dark:bg-[#353535]"
                 />
               </div>
               <div className="mb-5">
                 <label
                   htmlFor="subject"
-                  className="mb-3 block text-base font-medium text-[#5B6C5D]"
+                  className="mb-3 block text-base font-medium text-[#5B6C5D] dark:text-[#a0c2a4]"
                 >
                   Phone
                 </label>
@@ -59,13 +59,13 @@ const Contact = () => {
                   name="phone"
                   id="phone"
                   placeholder="123-456-7890"
-                  className="w-full rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                  className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:border-gray-600 dark:bg-[#353535]"
                 />
               </div>
               <div className="mb-5">
                 <label
                   htmlFor="message"
-                  className="mb-3 block text-base font-medium text-[#5B6C5D]"
+                  className="mb-3 block text-base font-medium text-[#5B6C5D] dark:text-[#a0c2a4]"
                 >
                   Message
                 </label>
@@ -74,14 +74,14 @@ const Contact = () => {
                   name="message"
                   id="message"
                   placeholder="Write your message here"
-                  className="w-full resize-none rounded-xl border placeholder-gray-300 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] outline-none focus:border-[#59C9A5]"
+                  className="w-full resize-none rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:border-gray-600 dark:bg-[#353535]"
                 ></textarea>
               </div>
-              <div className="pb-10">
+              <div className="">
                 <motion.button
                   whileHover={{ scale: 1.15 }}
-                  className="rounded-[5px] bg-[#59C9A5] font-serif font-bold p-1 px-2 text-lg text-white outline-none"
-                > Submit
+                  className="rounded-[5px] bg-[#59C9A5] font-serif font-bold p-1 px-2 text-lg text-white dark:text-gray-900 outline-none"
+                > Send
                 </motion.button>
               </div>
             </form>
