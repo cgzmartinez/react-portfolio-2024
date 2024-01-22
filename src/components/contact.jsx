@@ -23,13 +23,13 @@ const Contact = () => {
                     name="name"
                     id="name"
                     placeholder="Johnny"
-                    className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:border-gray-600 dark:bg-[#353535]"
+                    className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
                   />
                   <input type="text"
                     name="name"
                     id="name"
                     placeholder="Silverhand"
-                    className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5]  dark:border-gray-600 dark:bg-[#353535]" />
+                    className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-gray-300 py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]" />
                 </div>
               </div>
               <div className="mb-5">
@@ -44,7 +44,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   placeholder="email@gmail.com"
-                  className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:border-gray-600 dark:bg-[#353535]"
+                  className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-gray-300 py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
                 />
               </div>
               <div className="mb-5">
@@ -59,7 +59,7 @@ const Contact = () => {
                   name="phone"
                   id="phone"
                   placeholder="123-456-7890"
-                  className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:border-gray-600 dark:bg-[#353535]"
+                  className="w-full rounded-xl border placeholder-gray-200 dark:placeholder-gray-500 border-gray-300 py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
                 />
               </div>
               <div className="mb-5">
@@ -74,7 +74,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   placeholder="Write your message here"
-                  className="w-full resize-none rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:border-gray-600 dark:bg-[#353535]"
+                  className="w-full resize-none rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-gray-300 py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
                 ></textarea>
               </div>
               <div className="">
