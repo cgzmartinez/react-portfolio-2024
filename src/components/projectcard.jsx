@@ -118,6 +118,7 @@ const ProjectCards = () => {
                 <img
                   src={image}
                   alt="Project Image"
+                  aria-label="Project Image"
                 />
               </CardHeader>
               <CardBody className="dark:bg-[#353535]">

@@ -40,7 +40,7 @@ const Work = () => {
         </div>
         <motion.div className="flex"
           whileHover={{ rotate: 5 }}>
-          <ProfilePic className="w-full items-end" height="450" />
+          <ProfilePic className="w-full items-end" height="450" aria-label="Profile Picture" />
         </motion.div>
         <div className="pt-10">
           <h1 className="text-3xl md:text-4xl font-serif font-bold dark:text-[#a0c2a4]">Projects I’ve Worked On</h1>

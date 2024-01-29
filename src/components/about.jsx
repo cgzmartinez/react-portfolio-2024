@@ -12,7 +12,7 @@ const About = () => {
         <h1 className="pt-10 px-20 text-left md:hidden block text-4xl font-serif font-bold dark:text-[#a0c2a4]">About Me</h1>
 
         <motion.div className="m-10" whileHover={{ rotate: 5 }}>
-          <AboutPic className="w-full items-end md:h-[500px]" height="450" />
+          <AboutPic className="w-full items-end md:h-[500px]" height="450" aria-label="About Picture" />
         </motion.div>
         <div className="px-20 md:pt-20 md:px-20 sm:px-20">
           <h1 className="hidden md:block text-4xl font-serif font-bold pb-10 dark:text-[#a0c2a4]">About Me</h1>
