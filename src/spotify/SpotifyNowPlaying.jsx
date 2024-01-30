@@ -21,10 +21,17 @@ const SpotifyNowPlaying = (props) => {
 
   return (
     <div className="flex pl-5 bg-[#E9EEE8]/80 dark:bg-[#b6cbb1]/20 backdrop-blur-sm h-[85px] w-[full] md:w-[auto] rounded-[50px] items-center outline-none overflow-hidden">
-      <FaSpotify
-        className={`fill-[#1DB954]/70 dark:fill-[#1DB954] absolute ${result.isPlaying ? 'animate-spin-slow' : ''}`}
-        size={45}
+      {result.isPlaying ? (
+      <img
+        src={result.albumImageUrl} // Use the fetched album image URL
+        alt="Album image"
+        className={`h-[45px] w-[45px] rounded-full absolute ${result.isPlaying ? 'animate-spin-slow' : ''}`}
       />
+    ) : (
+      <FaSpotify
+        className='fill-[#1DB954]/70 dark:fill-[#1DB954] absolute' size={45}
+      />
+    )}
       {loading ? (
         <div className="pl-10 grid grid-cols-1">
           <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">
@@ -54,7 +61,7 @@ const SpotifyNowPlaying = (props) => {
               </a>
               <a className="pl-10 font-light text-[#829d85]">
                 Dancing Queen by ABBA
-              </a>{' '}
+              </a>
             </div>
           )}
         </div>
