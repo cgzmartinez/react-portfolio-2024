@@ -24,18 +24,21 @@ const SpotifyNowPlaying = (props) => {
         <FaSpotify className={`fill-[#1DB954]/70 dark:fill-[#1DB954] absolute ${result.isPlaying ? 'animate-spin-slow' : ''}`} size={45} />
         {loading ? 
         <div className="pl-10 grid grid-cols-1">
-                <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">On Rotation</a>
-                <a className="pl-10 font-light text-[#829d85]">Loading tracks...</a>
-              </div> : 
-             <div className="pl-10 grid grid-cols-1">
-        {result.isPlaying ?<div className='grid grid-cols-1'>
-         <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">Now Playing</a>
-          <a className="pl-10 font-light text-[#829d85] overflow-hidden" href={result.songUrl} target="_blank">{result.title} by {result.artist}</a>
-              </div> : <div className='grid grid-cols-1'><a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">On Rotation</a>
-                <a className="pl-10 font-light text-[#829d85]">Dancing Queen by ABBA</a> </div>}
-        </div>
+          <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">On Rotation</a>
+          <a className="pl-10 font-light text-[#829d85]">Loading tracks...</a>
+        </div> : 
+        <div className="pl-10 grid grid-cols-1">
+          {result.isPlaying ?
+          <div className='grid grid-cols-1'>
+            <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">Now Playing</a>
+            <a className="pl-10 font-light text-[#829d85] overflow-hidden" href={result.songUrl} target="_blank">{result.title} by {result.artist}</a>
+          </div> : 
+          <div className='grid grid-cols-1'>
+            <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">On Rotation</a>
+            <a className="pl-10 font-light text-[#829d85]">Dancing Queen by ABBA</a> </div>}
+          </div>
         }
       </div>
-   )}
+      )}
 
 export default SpotifyNowPlaying
