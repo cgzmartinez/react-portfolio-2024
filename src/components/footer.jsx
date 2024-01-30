@@ -1,12 +1,12 @@
-import { FaSpotify } from "react-icons/fa6";
+import SpotifyNowPlaying from "../spotify/SpotifyNowPlaying";
 const Footer = () => {
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10 md:p-20 md:px-20">
         <div className="md:pt-6 md:pl-5 md:ml-20">
-          <div className="flex pl-5 bg-[#E9EEE8]/80 dark:bg-[#b6cbb1]/20 backdrop-blur-sm h-[85px] w-[full] md:w-[auto] rounded-[50px] items-center outline-none">
-            <FaSpotify className="fill-[#1DB954]/70 dark:fill-[#1DB954]" size={45} />
-          </div>
+          
+          <SpotifyNowPlaying/>
+
         </div>
         <div className="pt-10 text-center md:text-left md:pt-6 md:pl-20">
           <h1 className="font-serif font-bold text-lg md:text-xl dark:text-[#829d85]">Find me here</h1>
