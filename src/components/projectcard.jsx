@@ -1,16 +1,7 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Typography,
-  Tooltip,
-
-} from "@material-tailwind/react";
+import { Card, CardHeader, CardBody, CardFooter, Typography, Tooltip } from "@material-tailwind/react";
 import { DiMongodb } from "react-icons/di";
 import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa6";
-import { SiCucumber, SiExpo, SiExpress, SiFirebase, SiJest, SiTypescript } from "react-icons/si";
-
+import { SiCucumber, SiExpo, SiExpress, SiFirebase, SiJest, SiSvelte, SiTypescript } from "react-icons/si";
 
 const ProjectCards = () => {
 
@@ -34,13 +25,13 @@ const ProjectCards = () => {
     {
       title: "Schema",
       subtitle: "A calendar planning solution made with blank and blank. Work out hours before you finalize on your calendar.",
-      image:
-        "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image:     
+      "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       icon:
         <div>
 
         </div>,
-      date: "Jan 14, 2024"
+      date: "Jan 14, 2024",
     },
     {
       title: "Google Keep Clone",
@@ -48,10 +39,13 @@ const ProjectCards = () => {
       image:
         "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       icon:
-        <div>
-
-        </div>,
-      date: "Jan 12, 2024"
+      <div className="flex">
+        <SiSvelte className="mr-2" size={25} />
+        <SiTypescript className="mr-2" size={25} />
+        <SiFirebase size={25} />
+      </div>,
+      date: "Jan 12, 2024", 
+      tooltip: "Svelte with TypeScript and Firebase"
     },
     {
       title: "myFlix Angular App",
