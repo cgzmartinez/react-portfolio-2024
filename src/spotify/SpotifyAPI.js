@@ -1,8 +1,8 @@
 import querystring from "query-string";
 
-const client_id = import.meta.REACT_APP_CLIENT_ID;
-const client_secret = import.meta.REACT_APP_CLIENT_SECRET;
-const refresh_token = import.meta.REACT_APP_REFRESH_TOKEN;
+const client_id = import.meta.env.VITE_APP_CLIENT_ID;
+const client_secret = import.meta.env.VITE_APP_CLIENT_SECRET;
+const refresh_token = import.meta.env.VITE_APP_REFRESH_TOKEN;
 
 const basic = btoa(`${client_id}:${client_secret}`);
 const NOW_PLAYING_ENDPOINT = "https://api.spotify.com/v1/me/player/currently-playing";
