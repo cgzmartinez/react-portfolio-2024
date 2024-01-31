@@ -33,14 +33,14 @@ const SpotifyNowPlaying = (props) => {
       />
     )}
       {loading ? (
-        <div className="pl-10 grid grid-cols-1">
+        <div className="pl-9 grid grid-cols-1">
           <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">
             On Rotation
           </a>
           <a className="pl-10 font-light text-[#829d85]">Loading tracks...</a>
         </div>
       ) : (
-        <div className="pl-10 grid grid-cols-1">
+        <div className="pl-5 grid grid-cols-1 m-4">
           {result.isPlaying ? (
             <div className="grid grid-cols-1">
               <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">
@@ -60,7 +60,7 @@ const SpotifyNowPlaying = (props) => {
                 On Rotation
               </a>
               <a className="pl-10 font-light text-[#829d85]">
-                Dancing Queen by ABBA
+                Rose Thorns by Charmer
               </a>
             </div>
           )}
