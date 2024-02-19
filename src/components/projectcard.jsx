@@ -39,21 +39,6 @@ const ProjectCards = () => {
       tooltip: 'MERN Stack',
     },
     {
-      title: 'Valorant React App',
-      subtitle:
-        'A React app that fetches and displays agent and weapon information from the "Valorant-API"',
-      image:
-        'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      icon: (
-        <div className="flex">
-        <FaReact className="mr-2" size={25} />
-        <SiValorant size={25} />
-      </div>
-      ),
-      date: 'Jan 14, 2024',
-      tooltip: 'React with Valorant API',
-    },
-    {
       title: 'Google Keep Clone',
       subtitle: 'Another Google Keep Clone. Made using Svelte and Firebase.',
       image:
@@ -67,6 +52,21 @@ const ProjectCards = () => {
       ),
       date: 'Jan 12, 2024',
       tooltip: 'Svelte with TypeScript and Firebase',
+    },
+    {
+      title: 'Valorant React App',
+      subtitle:
+        'A React app that fetches and displays agent and weapon information from the "Valorant-API"',
+      image:
+        'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      icon: (
+        <div className="flex">
+        <FaReact className="mr-2" size={25} />
+        <SiValorant size={25} />
+      </div>
+      ),
+      date: 'Jan 14, 2024',
+      tooltip: 'React with Valorant API',
     },
     {
       title: 'myFlix Angular App',
