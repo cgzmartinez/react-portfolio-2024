@@ -16,6 +16,7 @@ import {
   SiJest,
   SiSvelte,
   SiTypescript,
+  SiValorant,
 } from 'react-icons/si'
 
 const ProjectCards = () => {
@@ -38,17 +39,23 @@ const ProjectCards = () => {
       tooltip: 'MERN Stack',
     },
     {
-      title: 'Schema',
+      title: 'Valorant React App',
       subtitle:
-        'A calendar planning solution made with blank and blank. Work out hours before you finalize on your calendar.',
+        'A React app that fetches and displays agent and weapon information from the "Valorant-API"',
       image:
         'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      icon: <div></div>,
+      icon: (
+        <div className="flex">
+        <FaReact className="mr-2" size={25} />
+        <SiValorant size={25} />
+      </div>
+      ),
       date: 'Jan 14, 2024',
+      tooltip: 'React with Valorant API',
     },
     {
       title: 'Google Keep Clone',
-      subtitle: 'Another google keep clone made with firebase.',
+      subtitle: 'Another Google Keep Clone. Made using Svelte and Firebase.',
       image:
         'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       icon: (
@@ -166,7 +173,7 @@ const ProjectCards = () => {
                         }}
                         className="border border-blue-gray-50 dark:border-[#505050] bg-white dark:bg-[#505050] px-3 py-2 shadow-xl shadow-black/10"
                       >
-                        <i>{icon}</i>
+                        <i className='dark:text-white/50'>{icon}</i>
                       </Tooltip>
                     </div>
                     <Typography className="font-normal dark:text-white/60">

@@ -10,7 +10,7 @@ function App() {
   return (
     <AnimatePresence>
       <BrowserRouter>
-        <div className='dark:bg-gray-900'>
+        <div className='dark:bg-gray-900 duration-500'>
           <Navbar />
           <Routes>
             <Route path='/' element={<Work />} />
