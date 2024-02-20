@@ -39,7 +39,6 @@ const Work = () => {
                 }}
                 className="rounded-[5px] bg-[#59C9A5] font-serif p-1 px-2  font-bold text-lg text-white outline-none dark:text-[#283434]"
               >
-                {' '}
                 Resume
               </motion.button>
             </a>

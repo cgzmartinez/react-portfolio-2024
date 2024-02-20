@@ -50,7 +50,8 @@ const ProjectCards = () => {
           <SiFirebase size={25} />
         </div>
       ),
-      date: 'Jan 12, 2024',
+      date: 'Jan 27, 2024',
+      link: "https://gkeep-svelte.netlify.app/",
       tooltip: 'Svelte with TypeScript and Firebase',
     },
     {
