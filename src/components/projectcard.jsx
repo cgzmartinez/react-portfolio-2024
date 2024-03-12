@@ -17,6 +17,7 @@ import {
   SiSvelte,
   SiTypescript,
   SiValorant,
+  SiVercel
 } from 'react-icons/si'
 
 const ProjectCards = () => {
@@ -24,18 +25,19 @@ const ProjectCards = () => {
     {
       title: 'pawed',
       subtitle:
-        'A booking application made with blank and blank. Think airbnb, but for pets.',
+        'A booking application made with MERN, and deployed on Vercel. Think airbnb, but for pets.',
       image:
         'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       icon: (
-        <div className="flex">
+        <div className="flex items-center">
           <DiMongodb className="mr-2" size={25} />
           <SiExpress className="mr-2" size={25} />
           <FaReact className="mr-2" size={25} />
-          <FaNodeJs size={25} />
+          <FaNodeJs className="mr-2" size={25} />
+          <SiVercel size={22}/>
         </div>
       ),
-      date: 'Jan 16, 2024',
+      date: 'March 11, 2024',
       tooltip: 'MERN Stack',
     },
     {
@@ -66,7 +68,7 @@ const ProjectCards = () => {
         <SiValorant size={25} />
       </div>
       ),
-      date: 'Jan 14, 2024',
+      date: 'Feb 27, 2024',
       tooltip: 'React with Valorant API',
     },
     {
