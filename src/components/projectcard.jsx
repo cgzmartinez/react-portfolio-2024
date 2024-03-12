@@ -43,6 +43,7 @@ const ProjectCards = () => {
         </div>
       ),
       date: 'March 11, 2024',
+      link: "https://pawed-app.vercel.app",
       tooltip: 'MERN Stack',
     },
 
