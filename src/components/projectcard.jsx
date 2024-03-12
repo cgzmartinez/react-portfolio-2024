@@ -19,6 +19,12 @@ import {
   SiValorant,
   SiVercel
 } from 'react-icons/si'
+import pawed from '../assets/pawed-project.png'
+import keep from '../assets/keep.png'
+import val from '../assets/valorant.png'
+import flix from '../assets/flix.png'
+import meet from '../assets/meet.png'
+import chat from '../assets/chat-app.png'
 
 const ProjectCards = () => {
   const cardItem = [
@@ -26,8 +32,7 @@ const ProjectCards = () => {
       title: 'pawed',
       subtitle:
         'A booking application made with MERN, and deployed on Vercel. Think airbnb, but for pets.',
-      image:
-        'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image:[pawed],
       icon: (
         <div className="flex items-center">
           <DiMongodb className="mr-2" size={25} />
@@ -40,11 +45,27 @@ const ProjectCards = () => {
       date: 'March 11, 2024',
       tooltip: 'MERN Stack',
     },
+
+    {
+      title: 'Valorant React App',
+      subtitle:
+        'A React app that fetches and displays agent and weapon information from the "Valorant-API"',
+      image:
+        [val],
+      icon: (
+        <div className="flex">
+        <FaReact className="mr-2" size={25} />
+        <SiValorant size={25} />
+      </div>
+      ),
+      date: 'Feb 27, 2024',
+      tooltip: 'React with Valorant API',
+    },
     {
       title: 'Google Keep Clone',
       subtitle: 'Another Google Keep Clone. Made using Svelte and Firebase.',
       image:
-        'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+       [keep],
       icon: (
         <div className="flex">
           <SiSvelte className="mr-2" size={25} />
@@ -57,25 +78,10 @@ const ProjectCards = () => {
       tooltip: 'Svelte with TypeScript and Firebase',
     },
     {
-      title: 'Valorant React App',
-      subtitle:
-        'A React app that fetches and displays agent and weapon information from the "Valorant-API"',
-      image:
-        'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      icon: (
-        <div className="flex">
-        <FaReact className="mr-2" size={25} />
-        <SiValorant size={25} />
-      </div>
-      ),
-      date: 'Feb 27, 2024',
-      tooltip: 'React with Valorant API',
-    },
-    {
       title: 'myFlix Angular App',
       subtitle: 'A movie application made with Angular that uses CRUD.',
       image:
-        'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        [flix],
       icon: (
         <div className="flex">
           <FaAngular className="mr-2" size={25} />
@@ -91,7 +97,7 @@ const ProjectCards = () => {
       subtitle:
         'A PWA (Progressive Web Application) made with React that uses a Calendar API to fetch upcoming events.',
       image:
-        'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        [meet],
       icon: (
         <div className="flex">
           <FaReact className="mr-2" size={25} />
@@ -108,7 +114,7 @@ const ProjectCards = () => {
       subtitle:
         'A chat application for mobile devices made using React Native.',
       image:
-        'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        [chat],
       icon: (
         <div className="flex">
           <FaReact className="mr-2" size={25} />
