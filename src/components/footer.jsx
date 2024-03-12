@@ -34,13 +34,6 @@ const Footer = () => {
                 <li>Linkedin</li>
               </a>
               <a
-                href="https://medium.com/@cgzmarti"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <li>Medium</li>
-              </a>
-              <a
                 href="https://www.upwork.com/freelancers/~0181d2b492c6b37a9e"
                 target="_blank"
                 rel="noreferrer"

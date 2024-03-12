@@ -64,10 +64,12 @@ const Work = () => {
             aria-label="Profile Picture"
           />
         </motion.div>
-        <div className="pt-10">
+        <div className="pt-10 md:ml-[45px]">
+          <nobr>
           <h1 className="text-3xl md:text-4xl font-serif font-bold dark:text-[#a0c2a4]">
             Projects I’ve Worked On
           </h1>
+          </nobr>
         </div>
       </section>
       <div className="px-10">
