@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
         <div className="flex items-center justify-center">
           <div className="dark:bg-[#353535] rounded-[25px] md:p-10 p-5 mb-10 mx-auto w-full">
-            <form>
+            <form action="https://formsubmit.co/cgzmarti@gmail.com" target='_blank' method="POST">
               <div className="mb-5">
                 <label
                   htmlFor="name"
@@ -35,19 +35,14 @@ const Contact = () => {
                 >
                   Name
                 </label>
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
+                <div className="mb-5">
+                  
                   <input
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Johnny"
-                    className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
-                  />
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Silverhand"
+                    required
+                    placeholder="Johnny Silverhand"
                     className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-gray-300 py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
                   />
                 </div>
@@ -63,6 +58,7 @@ const Contact = () => {
                   type="email"
                   name="email"
                   id="email"
+                  required
                   placeholder="email@gmail.com"
                   className="w-full rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-gray-300 py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
                 />
@@ -78,6 +74,7 @@ const Contact = () => {
                   type="text"
                   name="phone"
                   id="phone"
+                  required
                   placeholder="123-456-7890"
                   className="w-full rounded-xl border placeholder-gray-200 dark:placeholder-gray-500 border-gray-300 py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
                 />
@@ -93,16 +90,17 @@ const Contact = () => {
                   rows="6"
                   name="message"
                   id="message"
+                  required
                   placeholder="Write your message here"
                   className="w-full resize-none rounded-xl border placeholder-gray-300 dark:placeholder-gray-500 border-gray-300 py-3 px-6 text-base font-medium text-[#959595] dark:text-gray-300 outline-none focus:border-[#59C9A5] dark:bg-[#353535]"
                 ></textarea>
               </div>
               <div className="">
                 <motion.button
+                  type="submit"
                   whileTap={{ scale: 0.9 }}
                   className="rounded-[5px] bg-[#59C9A5] font-serif font-bold p-1 px-2 text-lg text-white dark:text-[#353535] outline-none"
                 >
-                  {' '}
                   Submit
                 </motion.button>
               </div>
