@@ -1,5 +1,5 @@
-import AboutPic from "../assets/about.svg?react";
-import { motion } from "framer-motion";
+import AboutPic from '../assets/about.svg?react'
+import { motion } from 'framer-motion'
 
 const About = () => {
   return (
@@ -27,8 +27,8 @@ const About = () => {
               About Me
             </h1>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
-              While initially setting out to work in graphic design, I’ve worked
-              in education since 2019.
+              Initially setting out to work in graphic design, I have worked in
+              education since 2019.
             </p>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
               While working as a teacher, I completed a certification for Full
@@ -39,7 +39,7 @@ const About = () => {
             </p>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
               These are some of the technologies I’ve been working with
-              recently:{" "}
+              recently:
             </p>
 
             <ul className="grid gap-1 grid-cols-3 py-6">
@@ -59,7 +59,7 @@ const About = () => {
         </div>
       </section>
     </motion.div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
