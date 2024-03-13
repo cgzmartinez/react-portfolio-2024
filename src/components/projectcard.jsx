@@ -13,7 +13,9 @@ import {
   SiExpo,
   SiExpress,
   SiFirebase,
+  SiHeroku,
   SiJest,
+  SiNetlify,
   SiSvelte,
   SiTypescript,
   SiValorant,
@@ -34,11 +36,11 @@ const ProjectCards = () => {
         'A booking application made with MERN, and deployed on Vercel. Think airbnb, but for pets.',
       image:[pawed],
       icon: (
-        <div className="flex items-center">
-          <DiMongodb className="mr-2" size={25} />
-          <SiExpress className="mr-2" size={25} />
-          <FaReact className="mr-2" size={25} />
-          <FaNodeJs className="mr-2" size={25} />
+        <div className="flex gap-2 items-center">
+          <DiMongodb size={25} />
+          <SiExpress size={25} />
+          <FaReact size={25} />
+          <FaNodeJs size={25} />
           <SiVercel size={22}/>
         </div>
       ),
@@ -54,24 +56,27 @@ const ProjectCards = () => {
       image:
         [val],
       icon: (
-        <div className="flex">
-        <FaReact className="mr-2" size={25} />
+        <div className="flex gap-2">
+        <FaReact size={25} />
         <SiValorant size={25} />
+        <SiVercel size={22}/>
       </div>
       ),
       date: 'Feb 27, 2024',
+      link:'https://valorant-app-react.vercel.app/',
       tooltip: 'React with Valorant API',
     },
     {
       title: 'Google Keep Clone',
-      subtitle: 'Another Google Keep Clone. Made using Svelte and Firebase.',
+      subtitle: 'Another Google Keep Clone. Made using Svelte and Firebase, hosted on Netlify',
       image:
        [keep],
       icon: (
-        <div className="flex">
-          <SiSvelte className="mr-2" size={25} />
-          <SiTypescript className="mr-2" size={25} />
+        <div className="flex gap-2">
+          <SiSvelte size={25} />
+          <SiTypescript size={25} />
           <SiFirebase size={25} />
+          <SiNetlify size={25}/>
         </div>
       ),
       date: 'Jan 27, 2024',
@@ -80,13 +85,14 @@ const ProjectCards = () => {
     },
     {
       title: 'myFlix Angular App',
-      subtitle: 'A movie application made with Angular that uses CRUD.',
+      subtitle: 'A movie application that uses CRUD. Made with TypeScript and Angular. ',
       image:
         [flix],
       icon: (
-        <div className="flex">
-          <FaAngular className="mr-2" size={25} />
-          <SiTypescript className="p-[2px]" size={25} />
+        <div className="flex gap-2">
+          <FaAngular size={25} />
+          <SiTypescript size={25} />
+          <SiHeroku size={25}/>
         </div>
       ),
       date: 'Nov 14, 2022',
@@ -100,10 +106,10 @@ const ProjectCards = () => {
       image:
         [meet],
       icon: (
-        <div className="flex">
-          <FaReact className="mr-2" size={25} />
-          <SiJest className="p-[1px] mr-2" size={25} />
-          <SiCucumber className="p-[1px]" size={25} />
+        <div className="flex gap-2">
+          <FaReact  size={25} />
+          <SiJest  size={25} />
+          <SiCucumber  size={25} />
         </div>
       ),
       date: 'Nov 12, 2022',
@@ -117,9 +123,9 @@ const ProjectCards = () => {
       image:
         [chat],
       icon: (
-        <div className="flex">
-          <FaReact className="mr-2" size={25} />
-          <SiFirebase className="mr-2" size={25} />
+        <div className="flex gap-2">
+          <FaReact size={25} />
+          <SiFirebase size={25} />
           <SiExpo size={25} />
         </div>
       ),
