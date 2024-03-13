@@ -1,4 +1,4 @@
-import SpotifyNowPlaying from '../spotify/SpotifyNowPlaying'
+import SpotifyNowPlaying from "../spotify/SpotifyNowPlaying";
 const Footer = () => {
   return (
     <div>
@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
       <div className="flex items-center justify-center py-10">
         <p className="text-xs dark:text-white/50">
-          Designed and built by{' '}
+          Designed and built by{" "}
           <a
             href="https://github.com/cgzmartinez"
             target="_blank"
@@ -57,7 +57,7 @@ const Footer = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

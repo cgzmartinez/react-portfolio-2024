@@ -1,5 +1,5 @@
-import AboutPic from '../assets/about.svg?react'
-import { motion } from 'framer-motion'
+import AboutPic from "../assets/about.svg?react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -32,11 +32,14 @@ const About = () => {
             </p>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
               While working as a teacher, I completed a certification for Full
-              Stack Web Development after building a quiz application for a
-              student’s class.{' '}
+              Stack Web Development. I've since worked at Grinnell College,
+              helping with debugging, feature implementation, website
+              maintenance, and managing add-on modules at their Center for
+              Careers, Life, and Service.
             </p>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
-              These are some of the technology I’ve been working with recently:{' '}
+              These are some of the technologies I’ve been working with
+              recently:{" "}
             </p>
 
             <ul className="grid gap-1 grid-cols-3 py-6">
@@ -56,7 +59,7 @@ const About = () => {
         </div>
       </section>
     </motion.div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

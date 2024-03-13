@@ -1,25 +1,25 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import {
   FaBarsStaggered,
   FaCodepen,
   FaGithub,
   FaLinkedin,
   FaXmark,
-} from 'react-icons/fa6'
-import { SiUpwork } from 'react-icons/si'
-import { motion } from 'framer-motion'
-import Toggle from './toggle'
-import DeskToggle from './desktoggle'
+} from "react-icons/fa6";
+import { SiUpwork } from "react-icons/si";
+import { motion } from "framer-motion";
+import Toggle from "./toggle";
+import DeskToggle from "./desktoggle";
 
 const Navbar = () => {
   // Manages the navbar's visibility
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
 
   // Toggle function to handle the navbar's display
   const handleNav = () => {
-    setNav(!nav)
-  }
+    setNav(!nav);
+  };
 
   return (
     <nav className="flex items-center justify-between p-8">
@@ -51,8 +51,8 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? 'fixed z-40 md:hidden left-0 top-0 w-[70%] h-full bg-white dark:bg-[#2a2a2a] rounded-r-3xl drop-shadow-2xl ease-in-out duration-500'
-            : 'ease-in-out w-[70%] duration-500 fixed top-0 bottom-0 left-[-100%]'
+            ? "fixed z-40 md:hidden left-0 top-0 w-[70%] h-full bg-white dark:bg-[#2a2a2a] rounded-r-3xl drop-shadow-2xl ease-in-out duration-500"
+            : "ease-in-out w-[70%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >
         {/* Mobile Navigation Items */}
@@ -65,7 +65,7 @@ const Navbar = () => {
           <li className="font-light pb-10 text-xl">
             <NavLink
               to="/"
-              className={({ isActive }) => (isActive ? 'active' : '')}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               Work
             </NavLink>
@@ -73,7 +73,7 @@ const Navbar = () => {
           <li className="font-light pb-10 text-xl">
             <NavLink
               to="/about"
-              className={({ isActive }) => (isActive ? 'active' : '')}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               About
             </NavLink>
@@ -81,7 +81,7 @@ const Navbar = () => {
           <li className="font-light text-xl">
             <NavLink
               to="/contact"
-              className={({ isActive }) => (isActive ? 'active' : '')}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               Contact
             </NavLink>
@@ -125,7 +125,7 @@ const Navbar = () => {
           <li className="font-light px-7 text-lg">
             <NavLink
               to="/"
-              className={({ isActive }) => (isActive ? 'active' : '')}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               Work
             </NavLink>
@@ -133,7 +133,7 @@ const Navbar = () => {
           <li className="font-light px-7 text-lg">
             <NavLink
               to="/about"
-              className={({ isActive }) => (isActive ? 'active' : '')}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               About
             </NavLink>
@@ -141,7 +141,7 @@ const Navbar = () => {
           <li className="font-light px-7 text-lg">
             <NavLink
               to="/contact"
-              className={({ isActive }) => (isActive ? 'active' : '')}
+              className={({ isActive }) => (isActive ? "active" : "")}
             >
               Contact
             </NavLink>
@@ -152,7 +152,7 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

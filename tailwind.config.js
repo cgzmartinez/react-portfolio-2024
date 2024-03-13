@@ -9,20 +9,15 @@ export default withMT({
   ],
   theme: {
     fontFamily: {
-      'sans': [
-        'Roboto'
-      ],
-      'serif': [
-        'Roboto Serif'
-      ],
-
+      sans: ["Roboto"],
+      serif: ["Roboto Serif"],
     },
     extend: {
       animation: {
-        'spin-slow': 'spin 3s linear infinite'},
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   plugins: [],
   darkMode: "class",
-})
-
+});

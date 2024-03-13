@@ -1,8 +1,8 @@
-import { FaLinkedin } from 'react-icons/fa6'
-import { motion } from 'framer-motion'
-import ProfilePic from '../assets/profile-pic.svg?react'
-import ProjectCards from './projectcard'
-import Resume from '../assets/cm-resume-2023.pdf'
+import { FaLinkedin } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import ProfilePic from "../assets/profile-pic.svg?react";
+import ProjectCards from "./projectcard";
+import Resume from "../assets/cm-resume-2023.pdf";
 
 const Work = () => {
   return (
@@ -18,10 +18,10 @@ const Work = () => {
             Hi! My name is Carlos Martinez
           </h1>
           <p className="text-lg md:text-xl font-serif font-medium pb-6 dark:text-white/80">
-            I’m a{' '}
+            I’m a{" "}
             <span className="dark:text-[#a0c2a4]">
               full-stack web developer
-            </span>{' '}
+            </span>{" "}
             with a background in graphic design and education.
           </p>
           <p className="text-lg md:text-xl font-serif font-medium dark:text-white/80">
@@ -66,9 +66,9 @@ const Work = () => {
         </motion.div>
         <div className="pt-10 md:ml-[45px]">
           <nobr>
-          <h1 className="text-3xl md:text-4xl font-serif font-bold dark:text-[#a0c2a4]">
-            Projects I’ve Worked On
-          </h1>
+            <h1 className="text-3xl md:text-4xl font-serif font-bold dark:text-[#a0c2a4]">
+              Projects I’ve Worked On
+            </h1>
           </nobr>
         </div>
       </section>
@@ -76,7 +76,7 @@ const Work = () => {
         <ProjectCards />
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

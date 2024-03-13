@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react'
-import getNowPlayingItem from './SpotifyAPI'
-import { FaSpotify } from 'react-icons/fa6'
+import { useEffect, useState } from "react";
+import getNowPlayingItem from "./SpotifyAPI";
+import { FaSpotify } from "react-icons/fa6";
 
 const SpotifyNowPlaying = (props) => {
-  const [loading, setLoading] = useState(true)
-  const [result, setResult] = useState({})
+  const [loading, setLoading] = useState(true);
+  const [result, setResult] = useState({});
 
   useEffect(() => {
     Promise.all([
@@ -14,24 +14,25 @@ const SpotifyNowPlaying = (props) => {
         props.refresh_token,
       ),
     ]).then((results) => {
-      setResult(results[0])
-      setLoading(false)
-    })
-  })
+      setResult(results[0]);
+      setLoading(false);
+    });
+  });
 
   return (
     <div className="flex pl-5 bg-[#E9EEE8]/80 dark:bg-[#b6cbb1]/20 backdrop-blur-sm h-[85px] w-[full] md:w-[auto] rounded-[50px] items-center outline-none overflow-hidden">
       {result.isPlaying ? (
-      <img
-        src={result.albumImageUrl} // Use the fetched album image URL
-        alt="Album image"
-        className={`h-[45px] w-[45px] rounded-full absolute ${result.isPlaying ? 'animate-spin-slow' : ''}`}
-      />
-    ) : (
-      <FaSpotify
-        className='fill-[#1DB954]/70 dark:fill-[#1DB954] absolute' size={45}
-      />
-    )}
+        <img
+          src={result.albumImageUrl} // Use the fetched album image URL
+          alt="Album image"
+          className={`h-[45px] w-[45px] rounded-full absolute ${result.isPlaying ? "animate-spin-slow" : ""}`}
+        />
+      ) : (
+        <FaSpotify
+          className="fill-[#1DB954]/70 dark:fill-[#1DB954] absolute"
+          size={45}
+        />
+      )}
       {loading ? (
         <div className="pl-9 grid grid-cols-1">
           <a className="pl-10 font-bold text-[#78927b] dark:text-[#8bae8f]">
@@ -67,7 +68,7 @@ const SpotifyNowPlaying = (props) => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default SpotifyNowPlaying
+export default SpotifyNowPlaying;
