@@ -27,8 +27,8 @@ const About = () => {
               About Me
             </h1>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
-              Initially setting out to work in graphic design, I have worked in
-              education since 2019.
+              Initially setting out to work in graphic design, I found a way to
+              incorporate graphic design while working in education.
             </p>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
               While working as a teacher, I completed a certification for Full
