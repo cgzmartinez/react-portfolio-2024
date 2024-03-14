@@ -5,9 +5,9 @@ import {
   CardFooter,
   Typography,
   Tooltip,
-} from "@material-tailwind/react";
-import { DiMongodb } from "react-icons/di";
-import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa6";
+} from '@material-tailwind/react'
+import { DiMongodb } from 'react-icons/di'
+import { FaAngular, FaReact, FaNodeJs } from 'react-icons/fa6'
 import {
   SiCucumber,
   SiExpo,
@@ -20,20 +20,20 @@ import {
   SiTypescript,
   SiValorant,
   SiVercel,
-} from "react-icons/si";
-import pawed from "../assets/pawed-project.png";
-import keep from "../assets/keep.png";
-import val from "../assets/valorant.png";
-import flix from "../assets/flix.png";
-import meet from "../assets/meet.png";
-import chat from "../assets/chat-app.png";
+} from 'react-icons/si'
+import pawed from '../assets/pawed-project.png'
+import keep from '../assets/keep.png'
+import val from '../assets/valorant.png'
+import flix from '../assets/flix.png'
+import meet from '../assets/meet.png'
+import chat from '../assets/chat-app.png'
 
 const ProjectCards = () => {
   const cardItem = [
     {
-      title: "pawed",
+      title: 'pawed',
       subtitle:
-        "A booking application made with MERN, and deployed on Vercel. Think airbnb, but for pets.",
+        'A booking application made with MERN, and deployed on Vercel. Think airbnb, but for pets.',
       image: [pawed],
       icon: (
         <div className="flex gap-2 items-center">
@@ -44,15 +44,15 @@ const ProjectCards = () => {
           <SiVercel size={22} />
         </div>
       ),
-      date: "March 11, 2024",
-      link: "https://pawed-app.vercel.app",
-      tooltip: "MERN Stack",
+      date: 'March 11, 2024',
+      link: 'https://pawed-app.vercel.app',
+      tooltip: 'MERN Stack',
     },
 
     {
-      title: "Valorant React App",
+      title: 'Valorant React App',
       subtitle:
-        'A React app that fetches and displays agent and weapon information from the "Valorant-API"',
+        'A React app that fetches and displays agent and weapon information from the "Valorant-API".',
       image: [val],
       icon: (
         <div className="flex gap-2">
@@ -61,14 +61,14 @@ const ProjectCards = () => {
           <SiVercel size={22} />
         </div>
       ),
-      date: "Feb 27, 2024",
-      link: "https://valorant-app-react.vercel.app/",
-      tooltip: "React with Valorant API",
+      date: 'Feb 27, 2024',
+      link: 'https://valorant-app-react.vercel.app/',
+      tooltip: 'React with Valorant API',
     },
     {
-      title: "Google Keep Clone",
+      title: 'Google Keep Clone',
       subtitle:
-        "Another Google Keep Clone. Made using Svelte and Firebase, hosted on Netlify",
+        'Another Google Keep Clone. Made using Svelte and Firebase, hosted on Netlify.',
       image: [keep],
       icon: (
         <div className="flex gap-2">
@@ -78,14 +78,14 @@ const ProjectCards = () => {
           <SiNetlify size={25} />
         </div>
       ),
-      date: "Jan 27, 2024",
-      link: "https://gkeep-svelte.netlify.app/",
-      tooltip: "Svelte with TypeScript and Firebase",
+      date: 'Jan 27, 2024',
+      link: 'https://gkeep-svelte.netlify.app/',
+      tooltip: 'Svelte with TypeScript and Firebase',
     },
     {
-      title: "myFlix Angular App",
+      title: 'myFlix Angular App',
       subtitle:
-        "A movie application that uses CRUD. Made with TypeScript and Angular. ",
+        'A movie application that uses CRUD. Made with TypeScript and Angular. ',
       image: [flix],
       icon: (
         <div className="flex gap-2">
@@ -94,14 +94,14 @@ const ProjectCards = () => {
           <SiHeroku size={25} />
         </div>
       ),
-      date: "Nov 14, 2022",
-      link: "https://cgzmartinez.github.io/myFlix-Angular-Client/welcome",
-      tooltip: "Angular with TypeScript",
+      date: 'Nov 14, 2022',
+      link: 'https://cgzmartinez.github.io/myFlix-Angular-Client/welcome',
+      tooltip: 'Angular with TypeScript',
     },
     {
-      title: "Meet App",
+      title: 'Meet App',
       subtitle:
-        "A PWA (Progressive Web Application) made with React that uses a Calendar API to fetch upcoming events.",
+        'A PWA (Progressive Web Application) made with React that uses a Calendar API to fetch upcoming events.',
       image: [meet],
       icon: (
         <div className="flex gap-2">
@@ -110,14 +110,14 @@ const ProjectCards = () => {
           <SiCucumber size={25} />
         </div>
       ),
-      date: "Nov 12, 2022",
-      link: "https://cgzmartinez.github.io/meet",
-      tooltip: "React with Testing",
+      date: 'Nov 12, 2022',
+      link: 'https://cgzmartinez.github.io/meet',
+      tooltip: 'React with Testing',
     },
     {
-      title: "Chat App",
+      title: 'Chat App',
       subtitle:
-        "A chat application for mobile devices made using React Native.",
+        'A chat application for mobile devices made using React Native.',
       image: [chat],
       icon: (
         <div className="flex gap-2">
@@ -126,11 +126,11 @@ const ProjectCards = () => {
           <SiExpo size={25} />
         </div>
       ),
-      date: "Nov 2, 2022",
-      link: "https://github.com/cgzmartinez/chat-app",
-      tooltip: "React Native with Firebase",
+      date: 'Nov 2, 2022',
+      link: 'https://github.com/cgzmartinez/chat-app',
+      tooltip: 'React Native with Firebase',
     },
-  ];
+  ]
 
   return (
     <div className="max-w-[1640px] mx-auto grid md:grid-cols-2 gap-10 pb-10 md:px-20">
@@ -158,14 +158,14 @@ const ProjectCards = () => {
                       variant="h3"
                       color="blue-gray"
                     >
-                      {title}{" "}
+                      {title}{' '}
                     </Typography>
                     <Typography
                       className="mt-3 font-normal dark:text-white/60"
                       variant="lead"
                       color="gray"
                     >
-                      {subtitle}{" "}
+                      {subtitle}{' '}
                     </Typography>
                   </CardBody>
                   <CardFooter className="flex items-center justify-between dark:bg-[#353535]">
@@ -190,17 +190,17 @@ const ProjectCards = () => {
                       </Tooltip>
                     </div>
                     <Typography className="font-normal dark:text-white/60">
-                      {date}{" "}
+                      {date}{' '}
                     </Typography>
                   </CardFooter>
                 </Card>
               </a>
             </div>
-          );
-        },
+          )
+        }
       )}
     </div>
-  );
-};
+  )
+}
 
-export default ProjectCards;
+export default ProjectCards
