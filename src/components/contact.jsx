@@ -27,7 +27,11 @@ const Contact = () => {
         </div>
         <div className="flex items-center justify-center">
           <div className="dark:bg-[#353535] rounded-[25px] md:p-10 p-5 mb-10 mx-auto w-full">
-            <form action="https://formsubmit.co/cgzmarti@gmail.com" target='_blank' method="POST">
+            <form
+              action="https://formsubmit.co/fc182495be1529ec90b31e803ee178f7"
+              target="_blank"
+              method="POST"
+            >
               <div className="mb-5">
                 <label
                   htmlFor="name"
@@ -36,7 +40,6 @@ const Contact = () => {
                   Name
                 </label>
                 <div className="mb-5">
-                  
                   <input
                     type="text"
                     name="name"
@@ -103,7 +106,6 @@ const Contact = () => {
                 >
                   Submit
                 </motion.button>
-                
               </div>
             </form>
           </div>
