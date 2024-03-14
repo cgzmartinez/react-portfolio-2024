@@ -190,7 +190,7 @@ const ProjectCards = () => {
                       </Tooltip>
                     </div>
                     <Typography className="font-normal dark:text-white/60">
-                      {date}{' '}
+                      {date}
                     </Typography>
                   </CardFooter>
                 </Card>
