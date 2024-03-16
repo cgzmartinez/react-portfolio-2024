@@ -18,9 +18,9 @@ const Work = () => {
             Hi! My name is Carlos Martinez
           </h1>
           <p className="text-lg md:text-xl font-serif font-medium pb-6 dark:text-white/80">
-            I’m a
+            I’m a&nbsp;
             <span className="dark:text-[#a0c2a4]">
-              full-stack web developer
+              full-stack web developer&nbsp;
             </span>
             with a background in graphic design and education.
           </p>
