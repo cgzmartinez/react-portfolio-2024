@@ -12,8 +12,8 @@ const Work = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <section className=" grid grid-cols-1 gap-8 md:px-10 m-10 md:grid-cols-2 md:items-center md:text-left">
-        <div className="dark:p-10 dark:bg-[#353535] dark:rounded-[25px]">
+      <section className=" grid grid-cols-1 gap-8 md:px-10 m-10 md:flex md:flex-row md:items-center md:text-left">
+        <div className="p-5 md:p-0 dark:p-10 dark:bg-[#353535] dark:rounded-[25px] basis-1/2">
           <h1 className="text-4xl font-serif font-bold pb-6 dark:text-[#a0c2a4]">
             Hi! My name is Carlos Martinez
           </h1>
@@ -57,13 +57,15 @@ const Work = () => {
             </motion.a>
           </div>
         </div>
-        <motion.div className="" whileHover={{ rotate: 5 }}>
-          <ProfilePic
-            className="w-full"
-            height="450"
-            aria-label="Profile Picture"
-          />
-        </motion.div>
+        <div className="md:pl-[50px] lg:pl-[200px] basis-1/2">
+          <motion.div whileHover={{ rotate: 5 }}>
+            <ProfilePic
+              className="w-full"
+              height="450"
+              aria-label="Profile Picture"
+            />
+          </motion.div>
+        </div>
       </section>
       <div className="md:px-10 m-10 pt-10">
         <h1 className="text-4xl md:text-4xl font-serif font-bold dark:text-[#a0c2a4]">

@@ -111,7 +111,7 @@ const ProjectCards = () => {
         </div>
       ),
       date: 'Nov 12, 2022',
-      link: 'https://cgzmartinez.github.io/meet',
+      link: 'https://meet-app-demo.vercel.app/',
       tooltip: 'React with Testing',
     },
     {
