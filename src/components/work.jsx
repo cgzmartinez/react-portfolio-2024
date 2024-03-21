@@ -12,8 +12,8 @@ const Work = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <section className="grid grid-cols-1 gap-8 m-10 md:grid-cols-2 md:pl-10 md:items-center md:text-left">
-        <div className="p-10 md:p-5 dark:p-10 dark:bg-[#353535] dark:rounded-[25px]">
+      <section className=" grid grid-cols-1 gap-8 md:px-10 m-10 md:grid-cols-2 md:items-center md:text-left">
+        <div className="dark:p-10 dark:bg-[#353535] dark:rounded-[25px]">
           <h1 className="text-4xl font-serif font-bold pb-6 dark:text-[#a0c2a4]">
             Hi! My name is Carlos Martinez
           </h1>
@@ -57,21 +57,19 @@ const Work = () => {
             </motion.a>
           </div>
         </div>
-        <motion.div className="flex" whileHover={{ rotate: 5 }}>
+        <motion.div className="" whileHover={{ rotate: 5 }}>
           <ProfilePic
-            className="w-full items-end"
+            className="w-full"
             height="450"
             aria-label="Profile Picture"
           />
         </motion.div>
-        <div className="pt-10 md:ml-[45px]">
-          <nobr>
-            <h1 className="text-3xl md:text-4xl font-serif font-bold dark:text-[#a0c2a4]">
-              Projects I’ve Worked On
-            </h1>
-          </nobr>
-        </div>
       </section>
+      <div className="md:px-10 m-10 pt-10">
+        <h1 className="text-4xl md:text-4xl font-serif font-bold dark:text-[#a0c2a4]">
+          Projects I’ve Worked On
+        </h1>
+      </div>
       <div className="px-10">
         <ProjectCards />
       </div>

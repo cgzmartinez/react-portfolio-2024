@@ -95,7 +95,7 @@ const ProjectCards = () => {
         </div>
       ),
       date: 'Nov 14, 2022',
-      link: 'https://cgzmartinez.github.io/myFlix-Angular-Client/welcome',
+      link: 'https://my-flix-demo.vercel.app/',
       tooltip: 'Angular with TypeScript',
     },
     {
@@ -133,7 +133,7 @@ const ProjectCards = () => {
   ]
 
   return (
-    <div className="max-w-[1640px] mx-auto grid md:grid-cols-2 gap-10 pb-10 md:px-20">
+    <div className="max-w-[1640px] mx-auto grid md:grid-cols-2 md:px-10 gap-10 pb-10">
       {cardItem.map(
         ({ tooltip, title, subtitle, link, image, icon, date }, index) => {
           return (
