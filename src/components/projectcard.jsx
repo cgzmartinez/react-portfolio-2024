@@ -27,6 +27,8 @@ import val from '../assets/valorant.png'
 import flix from '../assets/flix.png'
 import meet from '../assets/meet.png'
 import chat from '../assets/chat-app.png'
+import { useState } from 'react'
+import ChatDialog from './chatdialog'
 
 const ProjectCards = () => {
   const cardItem = [
@@ -127,18 +129,37 @@ const ProjectCards = () => {
         </div>
       ),
       date: 'Nov 2, 2022',
-      link: 'https://github.com/cgzmartinez/chat-app',
       tooltip: 'React Native with Firebase',
     },
   ]
+
+  const [chatAppDialogOpen, setChatAppDialogOpen] = useState(false)
+  const [currentCard, setCurrentCard] = useState(null) // Track currently clicked card
+
+  const handleCardClick = (cardData) => {
+    setCurrentCard(cardData) // Set clicked card data
+    if (cardData.title === 'Chat App') {
+      setChatAppDialogOpen(true)
+    } else {
+      window.open(cardData.link, '_blank') // Open link in new tab
+    }
+  }
 
   return (
     <div className="max-w-[1640px] mx-auto grid md:grid-cols-2 md:px-10 gap-10 pb-10">
       {cardItem.map(
         ({ tooltip, title, subtitle, link, image, icon, date }, index) => {
           return (
-            <div key={index} className="bounce hover:drop-shadow-xl relative">
-              <a href={link} target="_blank" rel="noreferrer">
+            <div
+              key={index}
+              className="bounce hover:drop-shadow-xl relative cursor-pointer"
+            >
+              <a
+                href={link}
+                target={title === 'Chat App' ? '' : '_blank'} // Set target for non-"Chat App" cards
+                rel="noreferrer"
+                onClick={() => handleCardClick(cardItem[index])} // Pass the actual card data
+              >
                 <Card className="max-w-[40rem] max-h-[30rem] rounded-[25px] overflow-hidden bg-transparent">
                   <CardHeader
                     floated={false}
@@ -199,6 +220,13 @@ const ProjectCards = () => {
           )
         }
       )}
+      {chatAppDialogOpen &&
+        currentCard && ( // Only render if open and data exists
+          <ChatDialog
+            currentCard={currentCard} // Pass card data to dialog component
+            onClose={() => setChatAppDialogOpen(false)}
+          />
+        )}
     </div>
   )
 }
