@@ -140,9 +140,7 @@ const ProjectCards = () => {
     setCurrentCard(cardData) // Set clicked card data
     if (cardData.title === 'Chat App') {
       setChatAppDialogOpen(true)
-    } else {
-      window.open(cardData.link, '_blank') // Open link in new tab
-    }
+    } // Removed window.open call for other cards
   }
 
   return (
