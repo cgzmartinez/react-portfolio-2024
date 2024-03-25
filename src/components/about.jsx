@@ -52,7 +52,7 @@ const About = () => {
               <li className="text-sm">MongoDB</li>
 
               <li className="text-sm">Node.js</li>
-              <li className="text-sm pl-6">Vue</li>
+              <li className="text-sm pl-6">Svelte</li>
               <li className="text-sm">Express.js</li>
             </ul>
           </div>
