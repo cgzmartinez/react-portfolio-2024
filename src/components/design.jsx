@@ -23,7 +23,7 @@ const Design = () => {
           <NavLink to="/goingforth">
             <img
               src={podcast}
-              className="w-full object-cover rounded-3xl mt-3 mb-10"
+              className="w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
               aria-label="going forth podcast app"
             />
           </NavLink>

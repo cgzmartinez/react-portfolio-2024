@@ -72,26 +72,26 @@ const Navbar = () => {
           </li>
           <li className="font-light pb-10 text-xl">
             <NavLink
+              to="/design"
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Design
+            </NavLink>
+          </li>
+          <li className="font-light pb-10 text-xl">
+            <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               About
             </NavLink>
           </li>
-          <li className="font-light pb-10 text-xl">
+          <li className="font-light text-xl">
             <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Contact
-            </NavLink>
-          </li>
-          <li className="font-light text-xl">
-            <NavLink
-              to="/design"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              Design
             </NavLink>
           </li>
         </div>
@@ -140,6 +140,14 @@ const Navbar = () => {
           </li>
           <li className="font-light px-7 text-lg">
             <NavLink
+              to="/design"
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Design
+            </NavLink>
+          </li>
+          <li className="font-light px-7 text-lg">
+            <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
@@ -152,14 +160,6 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Contact
-            </NavLink>
-          </li>
-          <li className="font-light px-7 text-lg">
-            <NavLink
-              to="/design"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              Design
             </NavLink>
           </li>
           <div className="pb-5 pl-6">
