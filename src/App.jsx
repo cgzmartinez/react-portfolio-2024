@@ -1,10 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar";
-import Work from "./components/work";
-import About from "./components/about";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
-import { AnimatePresence } from "framer-motion";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/navbar'
+import Work from './components/work'
+import About from './components/about'
+import Design from './components/design'
+import Contact from './components/contact'
+import Footer from './components/footer'
+import { AnimatePresence } from 'framer-motion'
+import GoingForth from './components/goingforth'
+import ClsDesign from './components/clsdesign'
+import Fusion from './components/fusion'
 
 function App() {
   return (
@@ -16,12 +20,16 @@ function App() {
             <Route path="/" element={<Work />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/design" element={<Design />} />
+            <Route path="/goingforth" element={<GoingForth />} />
+            <Route path="/clsdesign" element={<ClsDesign />} />
+            <Route path="/fusion" element={<Fusion />} />
           </Routes>
           <Footer />
         </div>
       </BrowserRouter>
     </AnimatePresence>
-  );
+  )
 }
 
-export default App;
+export default App
