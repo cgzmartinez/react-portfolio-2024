@@ -9,8 +9,7 @@ const Fusion = () => {
         Newsletters
       </h1>
       <p className="font-light mb-5">
-        Web design oriented newletter for the Fusion Academy - Alpharetta
-        Campus.
+        Web design oriented newsletter for Fusion Academy - Alpharetta Campus.
       </p>
       <div className="gap-10 grid-cols-2 grid">
         <img src={newsletter} alt="Fusion Newsletter" />
