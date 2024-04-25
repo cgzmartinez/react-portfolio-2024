@@ -39,7 +39,7 @@ const Design = () => {
             <img
               src={pro}
               className="w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
-              aria-label="going forth podcast app"
+              aria-label="CLS Career Web Banners"
             />
           </NavLink>
         </div>
@@ -54,7 +54,7 @@ const Design = () => {
             <img
               src={news}
               className="w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
-              aria-label="going forth podcast app"
+              aria-label="Fusion Academy Newsletter"
             />
           </NavLink>
         </div>
