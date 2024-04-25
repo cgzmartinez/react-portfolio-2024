@@ -1,4 +1,4 @@
-import mockup from '../assets/gf-podcast-mockup.png'
+import Mockup from '../assets/podcast-mockup.svg?react'
 const GoingForth = () => {
   return (
     <div className="grid grid-cols-1s md:mx-[150px] my-5 mx-10">
@@ -12,7 +12,7 @@ const GoingForth = () => {
         A podcast app exploration for Grinnell College's Center for Careers,
         Life, and Service.
       </p>
-      <img src={mockup} alt="going forth podcast" />
+      <Mockup className="w-full h-auto" alt="going forth podcast" />
     </div>
   )
 }
