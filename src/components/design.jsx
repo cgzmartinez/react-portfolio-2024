@@ -6,20 +6,25 @@ const Design = () => {
   return (
     <div className="md:px-10 m-10">
       <div className="mb-10">
-        <h1 className="text-4xl md:text-4xl font-bold font-serif mt-10">
+        <h1 className="text-4xl md:text-4xl font-bold font-serif mt-10 dark:text-[#a0c2a4]">
           Design Work
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
         <div className="grid grid-cols-1">
-          <h3 className="text-sm font-semibold pb-1">
+          <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
             Grinnell College's Center for Careers, Life, and Service
           </h3>
-          <p className="text-sm font-light pb-1">
-            <span className="text-black italic">going forth</span> Podcast App
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            <span className="text-black italic dark:text-white/80">
+              going forth
+            </span>{' '}
+            Podcast App
           </p>
-          <p className="text-sm font-light pb-1">Mobile Design Case Study</p>
-          <p className="text-sm font-light">2024</p>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            Mobile Design Case Study
+          </p>
+          <p className="text-sm font-light dark:text-white/80">2024</p>
           <NavLink to="/goingforth">
             <img
               src={podcast}
@@ -29,12 +34,16 @@ const Design = () => {
           </NavLink>
         </div>
         <div className="grid grid-cols-1">
-          <h3 className="text-sm font-semibold pb-1">
+          <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
             Grinnell College's Center for Careers, Life, and Service
           </h3>
-          <p className="text-sm font-light pb-1">Career Website Banner</p>
-          <p className="text-sm font-light pb-1">Web Design</p>
-          <p className="text-sm font-light">2024</p>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            Career Website Banner
+          </p>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            Web Design
+          </p>
+          <p className="text-sm font-light dark:text-white/80">2024</p>
           <NavLink to="/clsdesign">
             <img
               src={pro}
@@ -44,12 +53,16 @@ const Design = () => {
           </NavLink>
         </div>
         <div className="grid grid-cols-1">
-          <h3 className="text-sm font-semibold pb-1">
+          <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
             Fusion Academy - Alpharetta Campus
           </h3>
-          <p className="text-sm font-light pb-1">Digital Newsletters</p>
-          <p className="text-sm font-light pb-1">Web Design</p>
-          <p className="text-sm font-light">2023</p>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            Digital Newsletters
+          </p>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            Web Design
+          </p>
+          <p className="text-sm font-light dark:text-white/80">2023</p>
           <NavLink to="/fusion">
             <img
               src={news}
