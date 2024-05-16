@@ -10,7 +10,8 @@ const ClsDesign = () => {
         Web Design - Banners
       </h1>
       <p className="font-light mb-5 dark:text-white/80">
-        Web design oriented banners for the Center's career website.
+        Web design oriented banners for the Grinnell College's Career Center
+        website.
       </p>
       <div className="gap-10 grid-cols-1 grid">
         <img src={grant} alt="professional grants" />
