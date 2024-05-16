@@ -7,7 +7,7 @@ const ClsDesign = () => {
         <span className="font-bold text-[#5b6c5d] dark:text-[#a0c2a4]">
           CLS
         </span>{' '}
-        Web Design
+        Web Design - Banners
       </h1>
       <p className="font-light mb-5 dark:text-white/80">
         Web design oriented banners for the Center's career website.

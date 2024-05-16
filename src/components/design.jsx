@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import podcast from '../assets/gf-pod.png'
 import pro from '../assets/professional_grants.png'
-import news from '../assets/newsb.png'
+import Southcity from '../assets/southcity2.png'
 const Design = () => {
   return (
     <div className="md:px-10 m-10">
@@ -35,6 +35,25 @@ const Design = () => {
         </div>
         <div className="grid grid-cols-1">
           <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
+            Personal Case Study
+          </h3>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            South City Medical Center
+          </p>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            Website Design Case Study
+          </p>
+          <p className="text-sm font-light dark:text-white/80">2024</p>
+          <NavLink to="/southcity">
+            <img
+              src={Southcity}
+              className="w-full h-[250px] object-cover drop-shadow-lg rounded-3xl mt-3 mb-10"
+              aria-label="south city medical center"
+            />
+          </NavLink>
+        </div>
+        <div className="grid grid-cols-1">
+          <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
             Grinnell College's Center for Careers, Life, and Service
           </h3>
           <p className="text-sm font-light pb-1 dark:text-white/80">
@@ -49,25 +68,6 @@ const Design = () => {
               src={pro}
               className="w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
               aria-label="CLS Career Web Banners"
-            />
-          </NavLink>
-        </div>
-        <div className="grid grid-cols-1">
-          <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
-            Fusion Academy - Alpharetta Campus
-          </h3>
-          <p className="text-sm font-light pb-1 dark:text-white/80">
-            Digital Newsletters
-          </p>
-          <p className="text-sm font-light pb-1 dark:text-white/80">
-            Web Design
-          </p>
-          <p className="text-sm font-light dark:text-white/80">2023</p>
-          <NavLink to="/fusion">
-            <img
-              src={news}
-              className="w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
-              aria-label="Fusion Academy Newsletter"
             />
           </NavLink>
         </div>
