@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import podcast from '../assets/gf-pod.png'
 import pro from '../assets/professional_grants.png'
 import Southcity from '../assets/southcity2.png'
+import Bluestem from '../assets/bluestem.png'
 const Design = () => {
   return (
     <div className="md:px-10 m-10">
@@ -47,7 +48,27 @@ const Design = () => {
           <NavLink to="/southcity">
             <img
               src={Southcity}
-              className="w-full h-[250px] object-cover drop-shadow-lg rounded-3xl mt-3 mb-10"
+              className="w-full h-[250px] object-cover drop-shadow-xl rounded-3xl mt-3 mb-10"
+              aria-label="south city medical center"
+            />
+          </NavLink>
+        </div>
+
+        <div className="grid grid-cols-1">
+          <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
+            Personal Case Study
+          </h3>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            Bluestem Healthcare
+          </p>
+          <p className="text-sm font-light pb-1 dark:text-white/80">
+            Website Design Case Study
+          </p>
+          <p className="text-sm font-light dark:text-white/80">2024</p>
+          <NavLink to="/bluestem">
+            <img
+              src={Bluestem}
+              className="w-full h-[250px] object-cover drop-shadow-xl rounded-3xl mt-3 mb-10"
               aria-label="south city medical center"
             />
           </NavLink>

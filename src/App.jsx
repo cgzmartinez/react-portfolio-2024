@@ -9,6 +9,7 @@ import { AnimatePresence } from 'framer-motion'
 import GoingForth from './components/goingforth'
 import ClsDesign from './components/clsdesign'
 import Southcity from './components/southcity'
+import Bluestem from './components/bluestem'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/goingforth" element={<GoingForth />} />
             <Route path="/clsdesign" element={<ClsDesign />} />
             <Route path="/southcity" element={<Southcity />} />
+            <Route path="/bluestem" element={<Bluestem />} />
           </Routes>
           <Footer />
         </div>
