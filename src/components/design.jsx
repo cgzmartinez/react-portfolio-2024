@@ -29,7 +29,7 @@ const Design = () => {
           <NavLink to="/goingforth">
             <img
               src={podcast}
-              className="w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
+              className="bounce w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
               aria-label="going forth podcast app"
             />
           </NavLink>
@@ -48,7 +48,7 @@ const Design = () => {
           <NavLink to="/southcity">
             <img
               src={Southcity}
-              className="w-full h-[250px] object-cover drop-shadow-xl rounded-3xl mt-3 mb-10"
+              className="bounce w-full h-[250px] object-cover drop-shadow-xl rounded-3xl mt-3 mb-10"
               aria-label="south city medical center"
             />
           </NavLink>
@@ -68,7 +68,7 @@ const Design = () => {
           <NavLink to="/bluestem">
             <img
               src={Bluestem}
-              className="w-full h-[250px] object-cover drop-shadow-xl rounded-3xl mt-3 mb-10"
+              className="bounce w-full h-[250px] object-cover drop-shadow-xl rounded-3xl mt-3 mb-10"
               aria-label="south city medical center"
             />
           </NavLink>
@@ -87,7 +87,7 @@ const Design = () => {
           <NavLink to="/clsdesign">
             <img
               src={pro}
-              className="w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
+              className="bounce w-full h-[250px] object-cover rounded-3xl mt-3 mb-10"
               aria-label="CLS Career Web Banners"
             />
           </NavLink>
