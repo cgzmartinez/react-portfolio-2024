@@ -25,12 +25,6 @@ const Southcity = () => {
         appointment booking, and engaging content for website vistors.
       </p>
 
-      <p className="font-light dark:text-white/80">
-        Overall, this project demonstrates an understanding of the unique needs
-        of healthcare web design, emphasizing accessibility, clarity, and a
-        welcoming user experience.
-      </p>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 my-5">
         <div>
           <h1 className="text-2xl md:text-3xl my-5 dark:text-[#a0c2a4]">
