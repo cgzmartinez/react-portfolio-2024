@@ -17,7 +17,7 @@ const Bluestem = () => {
         that focuses on personalized care, and an emphasis on longterm wellness.
         The focus was on creating a user-friendly and informative experience for
         patients and visitors. The design prioritized clear navigation,
-        convenient access appointment and patient portals call to actions, and
+        accessable appointment and patient portals, call to actions, and
         healthcare-related contents for website vistors.
       </p>
 
