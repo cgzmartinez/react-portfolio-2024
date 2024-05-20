@@ -11,15 +11,29 @@ import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
 const Southcity = () => {
   return (
     <div className="grid grid-cols-1 md:mx-[150px] my-5 mx-10">
-      <h1 className="font-thin font-serif text-2xl md:text-4xl  dark:text-[#a0c2a4]">
+      <h1 className="mb-5 font-thin font-serif text-2xl md:text-4xl  dark:text-[#a0c2a4]">
         <span className="font-bold text-[#5b6c5d] dark:text-[#a0c2a4]">
           South City Medical Center
         </span>{' '}
         - Case Study
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 my-10">
+      <p className="pb-5 font-light dark:text-white/80">
+        This case study showcases the web design of a local Atlanta medical
+        center. The focus was on creating a user-friendly and informative
+        experience for both the general public in the Atlanta Metroplolitan
+        Area. The design prioritized clear navigation, easy access to
+        appointment booking, and engaging content for website vistors.
+      </p>
+
+      <p className="font-light dark:text-white/80">
+        Overall, this project demonstrates an understanding of the unique needs
+        of healthcare web design, emphasizing accessibility, clarity, and a
+        welcoming user experience.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 my-5">
         <div>
-          <h1 className="text-2xl md:text-3xl mb-5 dark:text-[#a0c2a4]">
+          <h1 className="text-2xl md:text-3xl my-5 dark:text-[#a0c2a4]">
             Typography
           </h1>
           <p className="font-light dark:text-white/80">
@@ -28,7 +42,7 @@ const Southcity = () => {
             </span>{' '}
             was chosen as the primary font due to its legibility in UI design.{' '}
           </p>
-          <p className="font-light dark:text-white/80 my-5">
+          <p className="font-light dark:text-white/80 mt-5">
             Legibility is important in healthcare in order for patients and
             potential visitors to quickly find what they need on the website.
           </p>
