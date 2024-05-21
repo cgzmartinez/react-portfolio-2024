@@ -100,7 +100,7 @@ const Southcity = () => {
         </div>
       </div>
       <SouthCity
-        className="w-full h-auto drop-shadow-lg"
+        className="w-full h-auto mt-5 drop-shadow-lg"
         alt="south city medical center"
       />
     </div>
