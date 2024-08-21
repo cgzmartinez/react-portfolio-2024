@@ -32,11 +32,12 @@ const About = () => {
             </p>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
               While working as a teacher, I completed a certification for Full
-              Stack Web Development. I've since worked at Grinnell College,
-              helping with debugging, feature implementation, website
-              maintenance, and managing add-on modules at their Center for
-              Careers, Life, and Service. Currently working at the Philadelphia
-              College of Osteopathic Medicine as ExamSoft adminstrative support.
+              Stack Web Development. I've since worked at{' '}
+              <b>Grinnell College</b>, helping with debugging, feature
+              implementation, website maintenance, and managing add-on modules
+              at their Center for Careers, Life, and Service. Currently working
+              at the <b>Philadelphia College of Osteopathic Medicine</b> as
+              ExamSoft adminstrative support.
             </p>
             <p className="text-lg font-sans font-regular pb-6 dark:text-white/50">
               These are some of the technologies I’ve been working with
