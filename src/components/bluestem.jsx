@@ -10,15 +10,15 @@ const Bluestem = () => {
         <span className="font-bold text-[#5b6c5d] dark:text-[#a0c2a4]">
           Bluestem Healthcare
         </span>{' '}
-        - Case Study
+        - Freelance Design
       </h1>
       <p className="pb-5 font-light dark:text-white/80">
-        This case study showcases the web design of a Chicago hospital chain
-        that focuses on personalized care, and an emphasis on longterm wellness.
-        The focus was on creating a user-friendly and informative experience for
-        patients and visitors. The design prioritized clear navigation,
-        accessable appointment and patient portals, call to actions, and
-        healthcare-related contents for website vistors.
+        This project showcases the web design of an imagined Chicago hospital
+        chain that focuses on personalized care, and an emphasis on longterm
+        wellness. The focus was on creating a user-friendly and informative
+        experience for patients and visitors. The design prioritized clear
+        navigation, accessable appointment and patient portals, call to actions,
+        and healthcare-related contents for website vistors.
       </p>
 
       <p className="font-light dark:text-white/80">

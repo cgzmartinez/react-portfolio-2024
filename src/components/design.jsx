@@ -36,13 +36,13 @@ const Design = () => {
         </div>
         <div className="grid grid-cols-1">
           <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
-            Personal Case Study
+            Freelance
           </h3>
           <p className="text-sm font-light pb-1 dark:text-white/80">
             South City Medical Center
           </p>
           <p className="text-sm font-light pb-1 dark:text-white/80">
-            Website Design Case Study
+            Hospital Brand and Landing Page Design
           </p>
           <p className="text-sm font-light dark:text-white/80">2024</p>
           <NavLink to="/southcity">
@@ -56,13 +56,13 @@ const Design = () => {
 
         <div className="grid grid-cols-1">
           <h3 className="text-sm font-semibold pb-1 dark:text-[#a0c2a4]">
-            Personal Case Study
+            Freelance{' '}
           </h3>
           <p className="text-sm font-light pb-1 dark:text-white/80">
             Bluestem Healthcare
           </p>
           <p className="text-sm font-light pb-1 dark:text-white/80">
-            Website Design Case Study
+            Hospital Brand and Landing Page Design
           </p>
           <p className="text-sm font-light dark:text-white/80">2024</p>
           <NavLink to="/bluestem">

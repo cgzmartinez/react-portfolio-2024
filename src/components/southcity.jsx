@@ -15,10 +15,10 @@ const Southcity = () => {
         <span className="font-bold text-[#5b6c5d] dark:text-[#a0c2a4]">
           South City Medical Center
         </span>{' '}
-        - Case Study
+        - Freelance Design
       </h1>
       <p className="pb-5 font-light dark:text-white/80">
-        This case study showcases the web design of a local Atlanta medical
+        This project showcases the web design of an imagined Atlanta medical
         center. The focus was on creating a user-friendly and informative
         experience for both the general public in the Atlanta Metroplolitan
         Area. The design prioritized clear navigation, easy access to

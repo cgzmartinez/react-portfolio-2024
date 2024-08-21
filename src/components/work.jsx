@@ -26,7 +26,7 @@ const Work = () => {
           </p>
           <p className="text-lg md:text-xl font-serif font-medium dark:text-white/80">
             Currently focused on creating accessible and visually appealing
-            products at Grinnell College.
+            products in Higher-Ed.
           </p>
           <div className="flex items-center mt-6">
             <a href={Resume} target="_blank" rel="noreferrer">
