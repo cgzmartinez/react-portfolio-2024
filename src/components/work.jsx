@@ -2,7 +2,7 @@ import { FaLinkedin } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import ProfilePic from '../assets/profile-pic.svg?react'
 import ProjectCards from './projectcard'
-import Resume from '../assets/cm-resume-2024.pdf'
+import Resume from '../assets/cmartinez-resume-2025.pdf'
 
 const Work = () => {
   return (
