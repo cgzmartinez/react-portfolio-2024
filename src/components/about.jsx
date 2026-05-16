@@ -54,13 +54,9 @@ const About = () => {
               <li className="text-sm pl-6">React</li>
               <li className="text-sm">WordPress</li>
 
-              <li className="text-sm">TypeScript</li>
-              <li className="text-sm pl-6">Angular</li>
-              <li className="text-sm">MongoDB</li>
-
-              <li className="text-sm">Node.js</li>
-              <li className="text-sm pl-6">Svelte</li>
-              <li className="text-sm">Express.js</li>
+              <li className="text-sm">Figma</li>
+              <li className="text-sm pl-6">Adobe</li>
+              <li className="text-sm">Svelte</li>
             </ul>
           </div>
         </div>

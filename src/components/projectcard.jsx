@@ -18,12 +18,10 @@ import {
   SiNetlify,
   SiSvelte,
   SiTypescript,
-  SiValorant,
   SiVercel,
 } from 'react-icons/si'
 import pawed from '../assets/pawed-project.png'
 import keep from '../assets/keep.png'
-import val from '../assets/valorant.png'
 import flix from '../assets/flix.png'
 import meet from '../assets/meet.png'
 import chat from '../assets/chat-app.png'
@@ -99,22 +97,6 @@ const ProjectCards = () => {
       date: 'Nov 12, 2022',
       link: 'https://meet-app-demo.vercel.app/',
       tooltip: 'React with Testing',
-    },
-    {
-      title: 'Valorant React App',
-      subtitle:
-        'A React app that fetches and displays agent and weapon information from the "Valorant-API".',
-      image: [val],
-      icon: (
-        <div className="flex gap-2">
-          <FaReact size={25} />
-          <SiValorant size={25} />
-          <SiVercel size={22} />
-        </div>
-      ),
-      date: 'Feb 27, 2024',
-      link: 'https://valorant-app-react.vercel.app/',
-      tooltip: 'React with Valorant API',
     },
     {
       title: 'Chat App',
