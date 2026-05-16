@@ -15,7 +15,7 @@ const Work = () => {
       <section className=" grid grid-cols-1 gap-8 md:px-10 m-10 md:flex md:flex-row md:items-center md:text-left">
         <div className="p-5 md:p-0 dark:p-10 dark:bg-[#353535] dark:rounded-[25px] basis-1/2">
           <h1 className="text-4xl font-serif font-bold pb-6 dark:text-[#a0c2a4]">
-            Hi! My name is Carlos Martinez
+            Hello! My name is Carlos Martinez
           </h1>
           <p className="text-lg md:text-xl font-serif font-medium pb-6 dark:text-white/80">
             I’m a&nbsp;
